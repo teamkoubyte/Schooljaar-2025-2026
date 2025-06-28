@@ -1,6 +1,6 @@
 # 🎓 Schooljaar-2025-2026 
 
-![School](https://img.shields.io/badge/School-2024--2025-blue)
+![School](https://img.shields.io/badge/School-2025--2026-blue)
 ![Last Updated](https://img.shields.io/badge/Laatst%20bijgewerkt-6%20mei%202025-green)
 
 ## 📚 Over deze repository
