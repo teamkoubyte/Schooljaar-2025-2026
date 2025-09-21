@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 07, 2025 at 07:14 PM
+-- Generation Time: Sep 21, 2025 at 05:38 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -76,7 +76,7 @@ DROP TABLE IF EXISTS `tblpunt`;
 CREATE TABLE IF NOT EXISTS `tblpunt` (
   `volgnummer` int(11) NOT NULL AUTO_INCREMENT,
   `leerlingnummer` int(11) NOT NULL,
-  `vaknaam` varchar(20) NOT NULL,
+  `puntenboeknummer` int(20) NOT NULL,
   `score` int(11) NOT NULL,
   `maximum` int(11) NOT NULL,
   PRIMARY KEY (`volgnummer`)
@@ -86,19 +86,19 @@ CREATE TABLE IF NOT EXISTS `tblpunt` (
 -- Dumping data for table `tblpunt`
 --
 
-INSERT INTO `tblpunt` (`volgnummer`, `leerlingnummer`, `vaknaam`, `score`, `maximum`) VALUES
-(1, 2, 'Wiskunde', 7, 10),
-(2, 2, 'Wiskunde', 8, 15),
-(3, 3, 'Wiskunde', 2, 10),
-(4, 3, 'Wiskunde', 12, 15),
-(5, 2, 'Databases', 4, 10),
-(6, 2, 'Databases', 7, 15),
-(7, 3, 'Databases', 10, 10),
-(8, 3, 'Databases', 12, 15),
-(9, 2, 'Software', 5, 10),
-(10, 2, 'Software', 7, 15),
-(11, 3, 'Software', 10, 10),
-(12, 3, 'Software', 15, 15);
+INSERT INTO `tblpunt` (`volgnummer`, `leerlingnummer`, `puntenboeknummer`, `score`, `maximum`) VALUES
+(1, 2, 1, 7, 10),
+(2, 2, 1, 8, 15),
+(3, 3, 1, 2, 10),
+(4, 3, 1, 12, 15),
+(5, 2, 2, 4, 10),
+(6, 2, 2, 7, 15),
+(7, 3, 2, 10, 10),
+(8, 3, 2, 12, 15),
+(9, 2, 3, 5, 10),
+(10, 2, 3, 7, 15),
+(11, 3, 3, 10, 10),
+(12, 3, 3, 15, 15);
 
 -- --------------------------------------------------------
 
