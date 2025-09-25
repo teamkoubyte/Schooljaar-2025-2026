@@ -18,28 +18,28 @@
 | Millennium | Groepering van 1000 jaar |
 
 ### 7 historische periodes (Westerse geschiedenis)
-| Periode | Begin | Einde | Grensgebeurtenis (uit dia) | Emoji |
-|---------|-------|-------|----------------------------|-------|
-| Prehistorie | Ontstaan mens | ca. 3500 v.C. | Het eerste schrift | 🪨 |
-| Oude Nabije Oosten | ca. 3500 v.C. | ca. 800 v.C. | (Overgang naar Klassieke Oudheid / stichting Rome) | 🏺 |
-| Klassieke Oudheid | ca. 800 v.C. | 476 | Val van het West-Romeinse Rijk | 🏛️ |
-| Middeleeuwen | 476 | 1492 | Columbus landt in Amerika | ⛪ |
-| Vroegmoderne tijd | 1492 | 1789 | Franse Revolutie | �️ |
-| De moderne tijd | 1789 | 1945 | Einde WOII | 🏭 |
-| Hedendaagse tijd | 1945 | … | (Heden) | 💻 |
+| Periode | Begin | Einde | Grensgebeurtenis (uit dia) |
+|---------|-------|-------|----------------------------|
+| Prehistorie | Ontstaan mens | ca. 3500 v.C. | Het eerste schrift |
+| Oude Nabije Oosten | ca. 3500 v.C. | ca. 800 v.C. | (Overgang naar Klassieke Oudheid / stichting Rome) |
+| Klassieke Oudheid | ca. 800 v.C. | 476 | Val van het West-Romeinse Rijk |
+| Middeleeuwen | 476 | 1492 | Columbus landt in Amerika |
+| Vroegmoderne tijd | 1492 | 1789 | Franse Revolutie |
+| De moderne tijd | 1789 | 1945 | Einde WOII |
+| Hedendaagse tijd | 1945 | … | (Heden) |
 
 ---
 
 ## 🌍 Ruimte
 ### Schaalniveaus & typen ruimten
-| Categorie | Voorbeelden / labels uit dia | Emoji |
-|-----------|------------------------------|-------|
-| Schaal | Lokaal – Regionaal – Continentaal – Mondiaal | 🧭 |
-| Fysiek / ligging | Maritiem – Continentaal | ⚓ |
-| Sociaal-economisch / ontwikkelingscontrast | Centrum – Periferie | � |
-| Toegankelijkheid | Open ruimte – Gesloten ruimte | 🚪 |
-| Cultuur | Westers (Europees) – Niet-westers | 🧿 |
-| Verstedelijking | Stedelijk – Ruraal | 🏙️ |
+| Categorie | Voorbeelden / labels uit dia |
+|-----------|------------------------------|
+| Schaal | Lokaal – Regionaal – Continentaal – Mondiaal |
+| Fysiek / ligging | Maritiem – Continentaal |
+| Sociaal-economisch / ontwikkelingscontrast | Centrum – Periferie |
+| Toegankelijkheid | Open ruimte – Gesloten ruimte |
+| Cultuur | Westers (Europees) – Niet-westers |
+| Verstedelijking | Stedelijk – Ruraal |
 
 ---
 
