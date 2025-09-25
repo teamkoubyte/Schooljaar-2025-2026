@@ -72,12 +72,12 @@
 | Secundair | gemaakt op basis van andere bronnen |
 
 ### Indeling historische bronnen
-| Categorie | Voorbeelden (dia noemt alleen categorie) | Emoji |
-|-----------|-------------------------------------------|-------|
-| Geschreven | (—) | ✍️ |
-| Mondeling | (—) | �️ |
-| (Audio)visueel | (—) | 🎞️ |
-| Materieel | (—) | 🧱 |
+| Categorie |
+|-----------|
+| Geschreven |
+| Mondeling |
+| (Audio)visueel |
+| Materieel |
 
 ---
 ## 🔎 Bronnen kritisch bestuderen
