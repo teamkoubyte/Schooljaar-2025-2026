@@ -6,8 +6,8 @@ spelkarakter = "voetballer"
 
 
 print ("Je bent een " + spelkarakter + " die zoveel mogelijk wil scoren.")
-print("Als je 10 keer hebt gescoord ga je door naar het volgende level.")
-
-naam = input("Dag voetballer. Hoe moet ik je noemen? ")
-lengte = input("Hoe lang ben je? ")
-gewicht = input("Hoeveel weeg je")
+print("Je moet in dit spel zo veel mogelijk scoren. Je begint bij level 1 en eindigt in level 10. ")
+print("Om één level hoger te geraken moet je een doelpunt maken bij de tegenstander.")
+naam = input("Dag voetballer. Wat is je naam? ")
+lengte = input("Wat is je lengte? ")
+gewicht = input("Wat is je gewicht? ")
