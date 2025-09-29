@@ -1,4 +1,3 @@
-%
 # 📚 Het totalitarisme (Interbellum)
 
 ## ⏰ Tijdlijn
