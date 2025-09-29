@@ -1,5 +1,7 @@
 # 📚 Het totalitarisme (Interbellum)
 
+![](interbellumKaart.png)
+
 ## ⏰ Tijdlijn
 - **1918**: Einde Eerste Wereldoorlog – start instabiliteit in Europa
 - **1919**: Verdrag van **Versailles** – onvrede in **Duitsland**
