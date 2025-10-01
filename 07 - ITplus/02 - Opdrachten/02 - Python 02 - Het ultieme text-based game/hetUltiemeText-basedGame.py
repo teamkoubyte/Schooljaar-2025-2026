@@ -1,129 +1,241 @@
-import colorama as color
 import random
+import colorama as kleur
+import os
 
-color.init(autoreset=True)
+kleur.init(autoreset=True)
 
-# Game variabelen
-spelkarakter = "voetballer"
-level = 1
-max_level = 10
-doelpunten = 0
+naam = ""
+rol = ""
+favorieteWapen = ""
+dataPunten = 0
+levens = 3
+score = 0
+aantalZetten = 0
 
+kaart = [
+    ["#", "#", "#", "#", "#", "#", "#", "#"],
+    ["#", ".", "$", ".", "!", ".", "$", "#"],
+    ["#", "@", ".", "#", "#", ".", ".", "#"],
+    ["#", "$", ".", ".", ".", "!", "$", "#"],
+    ["#", ".", "#", "$", ".", ".", ".", "#"],
+    ["#", "!", ".", ".", "#", ".", "x", "#"],
+    ["#", "#", "#", "#", "#", "#", "#", "#"]
+]
 
-def toon_intro():
-    print("Je bent een " + spelkarakter + " die zoveel mogelijk wil scoren.")
-    print("Je moet in dit spel zo veel mogelijk scoren. Je begint bij level 1 en eindigt in level 10.")
-    print("Om één level hoger te geraken moet je een doelpunt maken bij de tegenstander.")
+# ASCII art gemaakt met https://patorjk.com/software/taag/
+print(kleur.Fore.GREEN + """   ___  _  _  ____  ____  ____  ___  ____  ___  __  __  ____  ____  ____  _  _    ___  ____  ____  __   
+ / __)( \/ )(  _ \( ___)(  _ \/ __)( ___)/ __)(  )(  )(  _ \(_  _)(_  _)( \/ )  / __)(  _ \( ___)(  )  
+( (__  \  /  ) _ < )__)  )   /\__ \ )__)( (__  )(__)(  )   / _)(_   )(   \  /   \__ \ )___/ )__)  )(__ 
+ \___) (__) (____/(____)(_)\_)(___/(____)\___)(______)(_)\_)(____) (__)  (__)   (___/(__)  (____)(____)        
+""")
+print(kleur.Fore.YELLOW + "Je bent een hacker die een beveiligd netwerk moet infiltreren!")
+print(kleur.Fore.YELLOW + "Verzamel alle data ($) en bereik de uitgang (x)")
+print(kleur.Fore.RED + "Pas op voor vallen (!)")
+print("")
+print("Controls:")
+print("z = omhoog bewegen")
+print("s = omlaag bewegen") 
+print("q = links bewegen")
+print("d = rechts bewegen")
+print("x = spel stoppen")
+print("")
 
+print(kleur.Fore.CYAN + "Maak eerst je hacker profiel:")
+print("")
 
-def vraag_speler_info():
-    naam = input("Dag voetballer. Wat is je naam? ")
-    leeftijd = input("Wat is je leeftijd? ")
-    lengte = input("Wat is je lengte? ")
-    gewicht = input("Wat is je gewicht? ")
-    rugnummer = input("Wat is je rugnummer? ")
-    favorieteBeen = input("Wat is je favorite been? ")
-    team = input("Wat is je team? ")
+naam = input("Wat is je hacker naam? ")
+if naam == "":
+    naam = "Anonymous"
 
-    return {
-        'naam': naam,
-        'leeftijd': leeftijd,
-        'lengte': lengte,
-        'gewicht': gewicht,
-        'rugnummer': rugnummer,
-        'favorieteBeen': favorieteBeen,
-        'team': team
-    }
+print("")
+print("Kies je specialiteit:")
+print("1. Netwerk Hacker")
+print("2. Malware Expert") 
+print("3. Social Engineer")
+rolKeuze = input("Kies 1, 2 of 3: ")
 
+if rolKeuze == "1":
+    rol = "Netwerk Hacker"
+    favorieteWapen = "Nmap scanner"
+elif rolKeuze == "2":
+    rol = "Malware Expert"
+    favorieteWapen = "Trojan virus"
+elif rolKeuze == "3":
+    rol = "Social Engineer"
+    favorieteWapen = "Phishing email"
+else:
+    rol = "Beginner Hacker"
+    favorieteWapen = "Keyboard"
 
-def toon_speler_info(speler):
-    print(f"\nHallo voetballer {speler['naam']}!")
-    print(f"Je bent een {speler['leeftijd']} jarige voetballer.")
-    print(f"Je speelt tegen de beste teams van de wereld, je begint met het spelen tegen Frankrijk.")
-    print("Je mag deze match absoluut niet verliezen, anders begin je opnieuw.\n")
+print("")
+print(kleur.Fore.MAGENTA + "Profiel aangemaakt!")
+print("Naam: " + naam)
+print("Rol: " + rol)
+print("Favoriete wapen: " + favorieteWapen)
 
+achtergrondLijst = [
+    "Je hebt geleerd hacken op school.",
+    "Je bent een ex-militair cyber specialist.", 
+    "Je hebt jezelf hacken geleerd op YouTube.",
+    "Je werkte vroeger voor een beveiligingsbedrijf.",
+]
+achtergrond = random.choice(achtergrondLijst)
+print("Achtergrond: " + achtergrond)
+print("")
 
-def toon_stats(level, doelpunten):
-    print(f"\n{color.Fore.CYAN}--- STATS ---")
-    print(f"Level: {level}/{max_level}")
-    print(f"Doelpunten: {doelpunten}")
-    print("-------------\n")
+input("Druk ENTER om het spel te starten...")
 
+gameOver = False
+gewonnen = False
 
-def speel_match():
-    teams = ["Frankrijk", "Brazilië", "Argentinië", "Duitsland", "Spanje",
-             "Nederland", "Italië", "Portugal", "Engeland", "België"]
-
-    tegenstander = teams[level - 1] if level <= len(teams) else "Wereldkampioen"
-
-    print(f"{color.Fore.YELLOW}--- MATCH TEGEN {tegenstander.upper()} ---")
-    print(f"Level {level}: Je speelt tegen {tegenstander}!")
-
-    print("\nKies je actie:")
-    print("1. Probeer te scoren")
-    print("2. Speel defensief")
-    print("3. Maak een pass")
-
-    keuze = input("Wat doe je? (1/2/3): ")
-
-    if keuze == "1":
-        if random.random() > 0.4:
-            print(f"{color.Fore.GREEN}DOELPUNT! Je scoort tegen {tegenstander}!")
-            return True
-        else:
-            print(f"{color.Fore.RED}Gemist! De keeper van {tegenstander} redt je schot.")
-            return False
-    elif keuze == "2":
-        if random.random() > 0.6:
-            print(f"{color.Fore.GREEN}Goede verdediging! Je krijgt een kans om te scoren!")
-            return True
-        else:
-            print(f"{color.Fore.RED}Je speelt te defensief en krijgt geen kansen.")
-            return False
-    elif keuze == "3":
-        if random.random() > 0.5:
-            print(f"{color.Fore.GREEN}Perfecte pass! Je teamgenoot scoort!")
-            return True
-        else:
-            print(f"{color.Fore.RED}De pass wordt onderschept door {tegenstander}.")
-            return False
+while gameOver == False:
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
+    print(kleur.Fore.CYAN + "Hacker: " + naam + " (" + rol + ")")
+    print("Data verzameld: " + str(dataPunten) + "/5")
+    print("Levens: " + str(levens))
+    print("Score: " + str(score))
+    print("Zetten: " + str(aantalZetten))
+    print("")
+    
+    rijTeller = 0
+    while rijTeller < len(kaart):
+        huidigeRij = kaart[rijTeller]
+        gekleurdeRij = []
+        
+        kolomTeller = 0
+        while kolomTeller < len(huidigeRij):
+            huidigTeken = huidigeRij[kolomTeller]
+            
+            if huidigTeken == '#':
+                gekleurdeRij.append(kleur.Fore.WHITE + '#')
+            elif huidigTeken == '$':
+                gekleurdeRij.append(kleur.Fore.GREEN + '$')
+            elif huidigTeken == 'x':
+                gekleurdeRij.append(kleur.Fore.YELLOW + 'x')
+            elif huidigTeken == '@':
+                gekleurdeRij.append(kleur.Fore.CYAN + '@')
+            elif huidigTeken == '!':
+                gekleurdeRij.append(kleur.Fore.RED + '!')
+            else:
+                gekleurdeRij.append('.')
+            
+            kolomTeller = kolomTeller + 1
+        
+        print("".join(gekleurdeRij))
+        rijTeller = rijTeller + 1
+    
+    print("")
+    
+    gebeurtenisKans = random.randint(1, 5)
+    if gebeurtenisKans == 1:
+        gebeurtenisLijst = [
+            "Je ontdekt een zwakke firewall!",
+            "Een beveiligingscamera heeft je bijna gespot!",
+            "Je " + favorieteWapen + " werkt perfect!",
+            "Het netwerk wordt langzamer...",
+            "Je hoort voetstappen in de gang!"
+        ]
+        randomGebeurtenis = random.choice(gebeurtenisLijst)
+        print(kleur.Fore.YELLOW + randomGebeurtenis)
+        print("")
+    
+    beweging = input(kleur.Fore.CYAN + "Wat wil je doen? (z/q/s/d/x): ").lower()
+    
+    if beweging == 'x':
+        print("")
+        print(kleur.Fore.RED + "Je hebt het spel verlaten!")
+        print("Totale score: " + str(score))
+        gameOver = True
+        break
+    
+    spelX = 0
+    spelY = 0
+    
+    zoekY = 0
+    while zoekY < len(kaart):
+        zoekX = 0
+        while zoekX < len(kaart[zoekY]):
+            if kaart[zoekY][zoekX] == '@':
+                spelX = zoekX
+                spelY = zoekY
+            zoekX = zoekX + 1
+        zoekY = zoekY + 1
+    
+    nieuweX = spelX
+    nieuweY = spelY
+    
+    if beweging == 'z':
+        nieuweY = nieuweY - 1
+    elif beweging == 's':
+        nieuweY = nieuweY + 1
+    elif beweging == 'q':
+        nieuweX = nieuweX - 1
+    elif beweging == 'd':
+        nieuweX = nieuweX + 1
     else:
-        print(f"{color.Fore.RED}Ongeldige keuze! Je verliest de bal.")
-        return False
+        print(kleur.Fore.RED + "Ongeldige keuze!")
+        input("Druk ENTER om verder te gaan...")
+        continue
+    
+    aantalZetten = aantalZetten + 1
+    
+    if kaart[nieuweY][nieuweX] == '#':
+        print(kleur.Fore.RED + "OEPS! Je botst tegen een firewall!")
+        print("Probeer een andere richting.")
+        input("Druk ENTER om verder te gaan...")
+    else:
+        doelTeken = kaart[nieuweY][nieuweX]
+        
+        if doelTeken == '$':
+            dataPunten = dataPunten + 1
+            score = score + 100
+            print(kleur.Fore.GREEN + "Je hebt een datapakket gehackt!")
+            print("+" + str(100) + " punten!")
+            
+        elif doelTeken == '!':
+            levens = levens - 1
+            score = score - 50
+            print(kleur.Fore.RED + "Je bent in een val gelopen!")
+            print("Je verliest een leven!")
+            print("-" + str(50) + " punten!")
+            
+            if levens <= 0:
+                print(kleur.Fore.RED + "Je hebt geen levens meer!")
+                gameOver = True
+                
+        elif doelTeken == 'x':
+            if dataPunten >= 5:
+                score = score + 500
+                print(kleur.Fore.MAGENTA + "Je bent ontsnapt!")
+                print("Je hebt alle data verzameld en bent veilig ontsnapt!")
+                print("+" + str(500) + " bonus punten!")
+                gewonnen = True
+                gameOver = True
+            else:
+                print(kleur.Fore.RED + "Je hebt nog niet alle data!")
+                print("Je hebt nog " + str(5 - dataPunten) + " datapakketten nodig!")
+        
+        if gameOver == False:
+            kaart[spelY][spelX] = '.'
+            kaart[nieuweY][nieuweX] = '@'
+        
+        input("Druk ENTER om verder te gaan...")
 
+print("")
+print(kleur.Fore.CYAN + "========================================")
+print(kleur.Fore.CYAN + "           SPEL STATISTIEKEN")
+print(kleur.Fore.CYAN + "========================================")
+print("Speler: " + naam)
+print("Rol: " + rol) 
+print("Data verzameld: " + str(dataPunten) + "/5")
+print("Totaal aantal zetten: " + str(aantalZetten))
+print("Eindresultaat: " + str(score) + " punten")
 
-def game_loop(speler):
-    global level, doelpunten
+if gewonnen == True:
+    print(kleur.Fore.GREEN + "STATUS: MISSIE GESLAAGD!")
+else:
+    print(kleur.Fore.RED + "STATUS: MISSIE GEFAALD!")
 
-    while level <= max_level:
-        toon_stats(level, doelpunten)
-
-        if speel_match():
-            doelpunten += 1
-            print(f"{color.Fore.GREEN}Je gaat naar level {level + 1}!")
-            level += 1
-
-            if level > max_level:
-                print(f"{color.Fore.MAGENTA}🎉 GEFELICITEERD {speler['naam']}! Je hebt alle levels gehaald!")
-                print(f"Totaal doelpunten: {doelpunten}")
-                break
-        else:
-            print(f"{color.Fore.RED}Je hebt verloren tegen level {level}!")
-            print("Probeer het opnieuw!")
-
-        doorgaan = input(f"{color.Fore.CYAN}Wil je doorgaan? (j/n): ").lower()
-        if doorgaan != 'j' and doorgaan != 'ja':
-            print("Bedankt voor het spelen!")
-            break
-
-
-def main():
-    toon_intro()
-    speler = vraag_speler_info()
-    toon_speler_info(speler)
-
-    # Start de game loop
-    game_loop(speler)
-
-if __name__ == "__main__":
-    main()
+print("")
+print("Bedankt voor het spelen!")
