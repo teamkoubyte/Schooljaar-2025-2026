@@ -22,7 +22,6 @@ kaart = [
     ["#", "#", "#", "#", "#", "#", "#", "#"]
 ]
 
-# ASCII art gemaakt met https://patorjk.com/software/taag/
 print(kleur.Fore.GREEN + """   ___  _  _  ____  ____  ____  ___  ____  ___  __  __  ____  ____  ____  _  _    ___  ____  ____  __   
  / __)( \/ )(  _ \( ___)(  _ \/ __)( ___)/ __)(  )(  )(  _ \(_  _)(_  _)( \/ )  / __)(  _ \( ___)(  )  
 ( (__  \  /  ) _ < )__)  )   /\__ \ )__)( (__  )(__)(  )   / _)(_   )(   \  /   \__ \ )___/ )__)  )(__ 
@@ -32,7 +31,7 @@ print(kleur.Fore.YELLOW + "Je bent een hacker die een beveiligd netwerk moet inf
 print(kleur.Fore.YELLOW + "Verzamel alle data ($) en bereik de uitgang (x)")
 print(kleur.Fore.RED + "Pas op voor vallen (!)")
 print("")
-print("Controls:")
+print("Toetsenbord bediening:")
 print("z = omhoog bewegen")
 print("s = omlaag bewegen") 
 print("q = links bewegen")
