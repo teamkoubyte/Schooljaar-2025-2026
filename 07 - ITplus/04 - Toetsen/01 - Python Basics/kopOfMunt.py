@@ -2,12 +2,10 @@ import random
 
 aantalPuntenSpeler = 0
 aantalPuntenComputer = 0
-ronde = 1
-
-print("De computer gooide munt.")
+aantalRondes = 1
 
 while aantalPuntenSpeler < 5 and aantalPuntenComputer < 5:
-    print("--- RONDE " + str(ronde) + " ---")
+    print("--- RONDE " + str(aantalRondes) + " ---")
     
     jouwKeuze = input("Denk je dat de computer kop of munt zal gooien? ")
     
@@ -24,7 +22,7 @@ while aantalPuntenSpeler < 5 and aantalPuntenComputer < 5:
     print("De computer heeft " + str(aantalPuntenComputer) + " punten.")
     print("")
     
-    ronde += 1
+    aantalRondes += 1
 
 print("----------------")
 print("EINDE SPEL")
