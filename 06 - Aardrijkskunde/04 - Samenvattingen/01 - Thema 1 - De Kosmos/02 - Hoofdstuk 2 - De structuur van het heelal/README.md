@@ -223,9 +223,3 @@
 | **Bewoonbare zone** | Gebied waar vloeibaar water mogelijk is |
 
 ---
-
-### 📚 Studietips
-- Leer de volgorde van de planeten uit het hoofd (My Very Educated Mother Just Served Us Nachos)
-- Onthoud het verschil tussen meteoroïde, meteoor en meteoriet
-- Begrijp de hiërarchie: planeet → zonnestelsel → sterrenstelsel → cluster → supercluster → heelal
-- Let op de verschillende schaaleenheden: AE voor zonnestelsel, lichtjaar voor grotere afstanden
