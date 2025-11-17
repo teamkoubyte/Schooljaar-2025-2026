@@ -1,0 +1,75 @@
+body {
+    background-color: mintcream;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    border: 4px solid rgb(90, 80, 65);
+    padding: 4px;
+    margin: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    border: 3px dotted rgb(33, 19, 90);
+    padding: 2px;
+    margin: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: sandybrown;
+    background-color: dimgrey;
+}
+
+ul, ol {
+    background-color: greenyellow;
+    color: black;
+}
+
+table {
+    background-color: beige;
+    padding: 5px;
+}
+
+table td {
+    padding: 5px;
+}
+
+b {
+    color:darkblue;
+}
+
+.bovenste-rij-tabel {
+    background-color: burlywood;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: black;
+}
+
+.bol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+}
+
+.achternaam {
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    font-size: 24px;
+}

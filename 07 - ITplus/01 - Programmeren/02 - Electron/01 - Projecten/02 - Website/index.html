@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Electron App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="loadWebsite()">Mijn Website</button>
+    <button onclick="openFile()">Open</button>
+    <button onclick="saveFile()">Save</button>
+    <button onclick="showMessage()">Message</button>
+    <button onclick="showNotification()">Notificatie</button>
+  </div>
+
+  <webview id="webview" src="about:blank" allowpopups></webview>
+
+  <script>
+    const {ipcRenderer} = require('electron')
+    const path = require('path')
+    
+    window.addEventListener('DOMContentLoaded', () => {
+      loadWebsite()
+      
+      const webview = document.getElementById('webview')
+      webview.addEventListener('will-navigate', (e) => {
+        console.log('Navigating to:', e.url)
+      })
+    })
+    
+    function loadWebsite() {
+      const webview = document.getElementById('webview')
+      webview.src = 'file://' + path.join(__dirname, 'website', 'index.html')
+    }
+    
+    function openFile() {
+      ipcRenderer.send('openFile')
+    }
+    
+    function saveFile() {
+      ipcRenderer.send('saveFile')
+    }
+    
+    function showMessage() {
+      ipcRenderer.send('showMessage')
+    }
+    
+    function showNotification() {
+      ipcRenderer.send('showNotification', 'Notificatie', 'Dit is een notificatie')
+    }
+    
+    ipcRenderer.on('fileData', (event, data) => {
+      alert('File content: ' + data.substring(0, 100))
+    })
+  </script>
+</body>
+</html>

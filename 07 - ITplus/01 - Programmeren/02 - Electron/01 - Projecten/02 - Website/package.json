@@ -1,0 +1,24 @@
+{
+  "name": "website-electron-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . WebsiteApp --platform=win32 --arch=x64 --out=dist --overwrite",
+    "package-mac": "electron-packager . WebsiteApp --platform=darwin --arch=x64 --out=dist --overwrite",
+    "package-linux": "electron-packager . WebsiteApp --platform=linux --arch=x64 --out=dist --overwrite",
+    "package-all": "electron-packager . WebsiteApp --platform=all --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [
+    "electron",
+    "website"
+  ],
+  "author": "Mohamed Koubaa",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/packager": "^19.0.1",
+    "electron": "^27.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}
