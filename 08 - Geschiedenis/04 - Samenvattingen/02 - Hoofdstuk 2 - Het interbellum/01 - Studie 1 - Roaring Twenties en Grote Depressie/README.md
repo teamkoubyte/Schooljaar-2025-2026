@@ -1,6 +1,10 @@
+
+## Hoofdstuk 2 - Het interbellum: De Roaring Twenties 
+
 ![kaartDuitslandUSA](./kaartDuitslandUSA.png)
 
-## Hoofdstuk 2 - Het interbellum: De Roaring Twenties #### 👩 Emancipatie van de #### 👩 Emancipatie van de vrouw
+
+#### 👩 Emancipatie van de vrouw
 
 **🗳️ Politieke rechten**
 - **Suffragettes**: Vrouwenbeweging die vecht voor stemrecht
