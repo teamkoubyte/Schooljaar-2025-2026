@@ -279,9 +279,9 @@ Beurscrash 1929 -> daling prijzen en **paniekverkoop aandelen** -> economische c
 ## Tijd
 ![tijdlijn](./tijdlijn2.png)
 
-**Mars op Rome van Mussolini** = **1922**
-**Machtsovername van Stalin** = **1923**
-**Aanstelling van Hitler als kanselier** = **1932**
+- **Mars op Rome van Mussolini** = **1922**
+- **Machtsovername van Stalin** = **1923**
+- **Aanstelling van Hitler als kanselier** = **1932**
 
 ## 1. Kenmerken Van Het Totalitarisme
 
@@ -619,10 +619,10 @@ Later in de oorlog (1940-1942): **Geallieerden**: China, Frankrijk, Verenigd Kon
 ## Tijd
 ![tijd](./tijdlijn4.png)
 
-**Tweede Wereldoorlog** = **1939-1945**
-**Invasie van Rusland en de aanval op Pearl Harbor** = **1941**
-**Overgave van Duitsland** = **1944**
-**Schakeljaar** = **1942**
+- **Tweede Wereldoorlog** = **1939-1945**
+- **Invasie van Rusland en de aanval op Pearl Harbor** = **1941**
+- **Overgave van Duitsland** = **1944**
+- **Schakeljaar** = **1942**
 
 ## 1. De AS-Mogendheden Aan De Winnende Hand
 
