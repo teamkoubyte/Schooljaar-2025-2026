@@ -10,7 +10,7 @@
 - **Hyperinflatie** =  **1923**
 - **Beurscrash** =  **1929**
 
-### 1. De Naoorlogse Economische Groei
+## 1. De Naoorlogse Economische Groei
 
 **Evolutie van economie meteen na WOI**:
 - BBP van Verenigde Staten daalt, omdat er minder is vraag voor producten vanuit Europa
@@ -47,7 +47,7 @@
 - De herstelbetalingen werden betaald met Amerikaanse leningen op lange termijn.
 - De geallieerden gebruikten dit geld om oorlogsschulden aan de VS terug te betalen.
 
-### 2. Cultuur En Emancipatie Tijdens De Roaring Twenties
+## 2. Cultuur En Emancipatie Tijdens De Roaring Twenties
 
 **Massacultuur**:
 - Cultuur gericht op een groot en beeld publiek vb. cinema, nieuwe muziekstijlen zoals Jazz en sportwedstrijden waar veel mensen naar kunnen komen kijken
@@ -66,7 +66,7 @@ dragen. Gaan opkomen voor stemrecht en dit in Amerika ook krijgen
 worden op jonge leeftijd. Door hun inzet op de arbeidsmarkt tijdens de
 oorlog. Nieuwe huishoudtoestellen zorgen voor meer vrije tijd voor de vrouw.
 
-### 3. De Grote Depressie
+## 3. De Grote Depressie
 
 **Beurscrash 1929**:
 - Er ontstond een speculatieve bubbel op de aandelenmarkt --> aandelen
@@ -97,7 +97,7 @@ werkloosheid verder daalt.
 **Wat is een gemengde economie**:
 - Economie waarbij de overheid zich mengt naast privé-initiatief.
 
-### Lesschema
+## Lesschema
 Roaring Twenties (1920-1929)
 
 Grote groei **Amerikaanse** economie door

@@ -1,6 +1,7 @@
 # 📚 Het totalitarisme (Interbellum)
 
-![](interbellumKaart.png)
+### Ruimte
+![interbellumKaart](interbellumKaart.png)
 
 ## ⏰ Tijdlijn
 - **1918**: Einde Eerste Wereldoorlog – start instabiliteit in Europa
