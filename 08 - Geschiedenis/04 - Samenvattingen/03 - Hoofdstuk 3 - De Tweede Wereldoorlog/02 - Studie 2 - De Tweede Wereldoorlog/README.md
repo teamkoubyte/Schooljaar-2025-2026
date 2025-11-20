@@ -1,10 +1,10 @@
 # Hoofdstuk 3 - Studie 2 - De Tweede Wereldoorlog
 
 ## Ruimte
-![kaart](kaart.png)
+![kaart](./kaartWOII.png)
 
 ## Tijd
-![tijd](./tijdlijn.png)
+![tijd](./tijdlijn4.png)
 
 **Tweede Wereldoorlog** = **1939-1945**
 **Invasie van Rusland en de aanval op Pearl Harbor** = **1941**

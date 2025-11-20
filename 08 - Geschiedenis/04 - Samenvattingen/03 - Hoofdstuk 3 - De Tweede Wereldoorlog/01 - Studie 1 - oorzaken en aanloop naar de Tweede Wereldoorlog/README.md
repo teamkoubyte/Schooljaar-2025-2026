@@ -1,10 +1,10 @@
 # Hoofdstuk 3 - Studie 1 - Oorzaken en aanloop naar de Tweede Wereldoorlog
 
 ## Ruimte
-![kaart](./kaart.png)
+![kaart](./kaartAs-mogendheden.png)
 
 ## Tijd
-![tijdlijn](tijdlijn.png)
+![tijdlijn](./tijdlijn3.png)
 
 - **Tweede Wereldoorlog** = **1939-1945**
 - **Anschluss en de conferentie van München** = **1938**

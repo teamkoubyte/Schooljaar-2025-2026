@@ -4,7 +4,7 @@
 ![interbellumKaart](./interbellumKaart.png)
 
 ## Tijd
-![tijdlijn](./tijdlijn.png)
+![tijdlijn](./tijdlijn2.png)
 
 **Mars op Rome van Mussolini** = **1922**
 **Machtsovername van Stalin** = **1923**
