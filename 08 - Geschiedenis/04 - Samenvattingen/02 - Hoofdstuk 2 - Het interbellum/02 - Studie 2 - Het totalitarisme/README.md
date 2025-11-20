@@ -6,9 +6,9 @@
 ## Tijd
 ![tijdlijn](./tijdlijn2.png)
 
-**Mars op Rome van Mussolini** = **1922**
-**Machtsovername van Stalin** = **1923**
-**Aanstelling van Hitler als kanselier** = **1932**
+- **Mars op Rome van Mussolini** = **1922**
+- **Machtsovername van Stalin** = **1923**
+- **Aanstelling van Hitler als kanselier** = **1932**
 
 ## 1. Kenmerken Van Het Totalitarisme
 

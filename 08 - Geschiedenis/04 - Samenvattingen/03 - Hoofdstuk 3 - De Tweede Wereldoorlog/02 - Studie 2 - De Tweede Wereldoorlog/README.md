@@ -6,10 +6,10 @@
 ## Tijd
 ![tijd](./tijdlijn4.png)
 
-**Tweede Wereldoorlog** = **1939-1945**
-**Invasie van Rusland en de aanval op Pearl Harbor** = **1941**
-**Overgave van Duitsland** = **1944**
-**Schakeljaar** = **1942**
+- **Tweede Wereldoorlog** = **1939-1945**
+- **Invasie van Rusland en de aanval op Pearl Harbor** = **1941**
+- **Overgave van Duitsland** = **1944**
+- **Schakeljaar** = **1942**
 
 ## 1. De AS-Mogendheden Aan De Winnende Hand
 
