@@ -19,6 +19,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Optimalisatie: Disable lazy loading violations in productie
+        \Illuminate\Database\Eloquent\Model::preventLazyLoading(!app()->isProduction());
+        
+        // Optimalisatie: Strict mode uitschakelen voor snelheid
+        \Illuminate\Database\Eloquent\Model::shouldBeStrict(false);
     }
 }

@@ -5,23 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>Documentenkluis - {{ config('app.name', 'SS') }}</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
 
+        <!-- Preload + Prefetch kritieke assets -->
+        <link rel="preload" href="{{ asset('css/app.css') }}" as="style">
+        <link rel="preload" href="{{ asset('css/navigation.css') }}" as="style">
+        <link rel="preload" href="{{ asset('js/navigation.js') }}" as="script">
+        <link rel="prefetch" href="{{ asset('css/dashboard.css') }}">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/navigation.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/welcome.css') }}">
+        
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="{{ asset('js/navigation.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+    <body>
+        <div>
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <header>
+                    <div class="container">
                         {{ $header }}
                     </div>
                 </header>
