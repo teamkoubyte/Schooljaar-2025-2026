@@ -75,6 +75,8 @@
 | **hematoloog** | bloedziekte |
 | **nefroloog** | nieren werken niet goed |
 | **cardioloog** | pijn aan je hartspier |
+| **oftalmoloog** | pijn aan je ogen |
+
 
 ---
 
