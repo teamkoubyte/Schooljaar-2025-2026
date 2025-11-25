@@ -937,5 +937,75 @@ Ook andere organisaties (WHO, Unesco, Unicef, Unesco, ...)
 
 ## Studie 2
 
+## De Europese Unie
+
+## Ruimte
+![kaarEU](./kaartEU.png)
+
+## Tijd
+![tijdlijn](./tijdlijn6.png)
+- **Verdrag van Rome** = **1957**
+- **Verdrag van Maastricht** = **1992**
+- **Brexit** = **2020**
+
+---
+
+## 1. De Europese Eenmaking
+### **Het doel van de Raad van Europa**:
+- Zorgen voor samenwerking en vrede in Europa. Is geen deel van de
+Europese Unie
+
+### **De gelijkenissen en verschillen tussen het UVRM en het EVRM**:
+- Gelijkenissen: gaan ook over basisrechten en vrijheden, bescherming, ... <br>
+Verschil: amper culturele/sociale/economische rechten
+
+### **Deze landen kunnen aanklagen indien deze rechten overtreden worden**:
+- Elke persoon of organisatie waarvan de rechten geschonden worden door een land van de Raad van Europa.
+
+### **De samenwerking tussen de Europese landen die groeide in de jaren 1950 en 1960**:
+- 1951 - oprichting van de EGKS -> steenkool en staal worden onder
+gemeenschappelijk toezicht geplaatst
+1957: Verdrag van Rome - Europese Economische gemeenschap: vrij verkeer van goederen/personen, eengemaakte markt
+1960: ontstaan van Europees parlement
+1968: afschaffing douanerechten binnen EEG
+
+### **Landen die toen samenwerkte**:
+- FR, DU, ITA, BENELUX
+
+### **Het effect dat dit had op economisch vlak voor deze landen**:
+- Economische groei door toegenomen handel
+
+### **Landen die zich bij de Europese Economische Gemeenschap in de jaren 1970-1980 bijvoegde**:
+- Portugal, Spanje, Verenigd Koninkrijk, Ierland, Denemarken, Griekenland
+
+### **Hoe de Europese Economische Gemeenschap democratischer werd**:
+- Door het Europees Parlement vanaf 1979 te laten verkiezen door de
+Europese bevolking
+
+### **Wat er opgericht werd met het verdrag van Maastricht**:
+- Oprichting Europese Unie
+
+### **Afspraken die gemaakt werden in dit verdrag**:
+- Gemeenschappelijke munt (Euro), een eengemaakte markt, afschaffing van grenscontroles en vrij verkeer van goederen, personen en diensten.
+
+### **Wat het Schengenverdrag inhoudt**:
+- Afschaffing van grenscontroles tussen de meeste landen van Europa.
+Iedereen kan visa vrij reizen tussen alle lidstaten
+
+### **De Europese Unie die zich verder uitbreidt**:
+- Polen, Hongarije, Tsjechië, Slovakije, Slovenië, Bulgarije, Malta, Cyprus, Roemenië, Oostenrijk, Zweden, Finland, Baltische Staten
+
+### **Veranderingen die weren ignevoerd door het verdrag van Lissabon**:
+- Europese Unie krijgt meer bevoegdheden en het Europees parlement krijgt meer macht.
+
+### **Eurosceptische partijen**:
+- Partijen die minder macht willen voor Europa, of uit de Europese Unie willen stappen. Ze worden populairder na het verdrag van Lissabon
+
+### **Waarom het anti-EU sentiment de laatste decennia toenam**:
+- Gebrek aan transparantie
+- Vluchtelingencrisis
+- Financiële crisis (2008)
+
+
 
 ---
