@@ -3,7 +3,7 @@
 ---
 
 # Les 1: Humor
-
+## Alles van kennen:
 ![humorvormen](./humorvormen.png)
 ![humorstijlen](./humorstijlen.png)
 ![humortechnieken](./humortechnieken.png)
@@ -11,26 +11,28 @@
 ---
 
 # Les 2: Cartoons en columns
-
+## Op het examen komt hier een leesopdracht van:
 ![zoSchrijfJeEenColumn](./zoSchrijfJeEenColumn.png)
 
 ---
 
 # Les 3: Visuele communicatie
-
+## De voordelen nadelen van kennen:
 ![visueelCommuniceren](./visueelCommuniceren.png)
 ![effectiefVisueelCommuniceren](./effectiefVisueelCommuniceren.png)
 
 ---
 
 # Les 4: Samenvatten
-
+## Op het examen komt hier een schrijfopdracht en luisteropdracht van:
+## De theorie moet je niet van buiten kennen, alleen weten hoe je een samenvatting maakt:
 ![samenvatten](./samenvatten.png)
 
 ---
 
 # Les 5: Taal in het brein (+)
 
+## Alles van kennen:
 ![deEersteFasenVanTaalverwerving](./deEersteFasenVanTaalverwerving.png)
 ![taalFoutenInDeVroeglingualseFase](./taalfoutenInDeVroeglingualeFase.png)
 ![dyslexie](./dyslexie.png)
@@ -41,7 +43,7 @@
 
 # Verruiming Lexicon: Stem en wetenschap
 
----
+## Alles van kennen:
 
 ## Voorvoegsels en woorddelen
 
