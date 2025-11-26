@@ -858,9 +858,7 @@ Ook andere organisaties (WHO, Unesco, Unicef, Unesco, ...)
 
 ---
 
-## Studie 2
-
-## De Europese Unie
+## Studie 2 - De Europese Unie
 
 ## Ruimte
 ![kaarEU](./kaartEU.png)
