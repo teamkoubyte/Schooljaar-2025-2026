@@ -43,17 +43,24 @@
                     <!-- Bestand uploaden (US012) -->
                     <div class="mb-6 p-4 bg-gray-50 rounded">
                         <h3 class="font-semibold mb-2">Bestand Uploaden</h3>
-                        <form method="POST" action="{{ route('bestanden.store') }}" enctype="multipart/form-data" class="form-row">
+                        <p class="text-sm text-gray-600 mb-2">Maximale bestandsgrootte: 100 MB</p>
+                        <form method="POST" action="{{ route('bestanden.store') }}" enctype="multipart/form-data" class="form-row" id="upload-form">
                             @csrf
                             <input type="hidden" name="map_id" value="{{ $huidigemap?->id }}">
                             <label class="form-file-label">
                                 <span class="file-upload-text" id="file-name">Kies bestand...</span>
-                                <input type="file" name="bestand" required class="hidden" onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'Kies bestand...'">
+                                <input type="file" name="bestand" required class="hidden" id="file-input" onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'Kies bestand...'">
                             </label>
-                            <button type="submit" class="form-button">
+                            <button type="submit" class="form-button" id="upload-btn">
                                 Uploaden
                             </button>
                         </form>
+                        <div id="upload-progress" class="hidden mt-3">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%" id="progress-bar"></div>
+                            </div>
+                            <p class="text-sm text-gray-600 mt-2" id="upload-status">Bestand wordt versleuteld en geüpload...</p>
+                        </div>
                     </div>
 
                     <!-- Leeg bestand aanmaken (US010) -->
@@ -152,4 +159,31 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+            
+            if (file && file.size > 10 * 1024 * 1024) { // Als bestand > 10MB
+                // Toon progress indicator
+                document.getElementById('upload-progress').classList.remove('hidden');
+                document.getElementById('upload-btn').disabled = true;
+                document.getElementById('upload-btn').textContent = 'Bezig met uploaden...';
+                
+                // Simuleer progress voor visuele feedback
+                let progress = 0;
+                const progressBar = document.getElementById('progress-bar');
+                const interval = setInterval(() => {
+                    progress += 1;
+                    if (progress <= 95) {
+                        progressBar.style.width = progress + '%';
+                    }
+                }, 500); // Update elke 500ms
+                
+                // Stop simulatie na 5 minuten (als het nog steeds bezig is)
+                setTimeout(() => clearInterval(interval), 300000);
+            }
+        });
+    </script>
 </x-app-layout>

@@ -12,6 +12,10 @@ class VersleutelingService
     // Upload, versleutel en sla bestand op
     public function versleutelEnSlaOp(UploadedFile $bestand, int $gebruikerId): array
     {
+        // Verhoog memory limit en execution time voor grote bestanden
+        ini_set('memory_limit', '512M');
+        set_time_limit(600);
+        
         // Lees originele bestand
         $inhoud = file_get_contents($bestand->getRealPath());
         
@@ -24,6 +28,9 @@ class VersleutelingService
         
         // Sla versleuteld op in storage
         Storage::disk('local')->put($pad, $versleuteld);
+        
+        // Vrij geheugen op
+        unset($inhoud, $versleuteld);
         
         // Return bestand info
         return [

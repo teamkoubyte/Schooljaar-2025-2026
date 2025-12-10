@@ -7,4 +7,4 @@ php artisan octane:start \
     --port=80 \
     --workers=4 \
     --max-requests=500 \
-    --watch
+    --watch%

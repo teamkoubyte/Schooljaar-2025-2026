@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'server' => env('OCTANE_SERVER', 'roadrunner'),
+    'server' => env('OCTANE_SERVER', 'swoole'),
 
     /*
     |--------------------------------------------------------------------------
@@ -219,6 +219,6 @@ return [
     |
     */
 
-    'max_execution_time' => 30,
+    'max_execution_time' => 600, // 10 minuten voor grote uploads
 
 ];

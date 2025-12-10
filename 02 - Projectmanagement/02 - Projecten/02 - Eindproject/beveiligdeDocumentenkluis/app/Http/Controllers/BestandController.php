@@ -46,9 +46,9 @@ class BestandController extends Controller
     // Upload en versleutel bestand
     public function store(Request $request)
     {
-        // Valideer upload (max 10MB)
+        // Valideer upload (max 100MB)
         $data = $request->validate([
-            'bestand' => 'required|file|max:10240',
+            'bestand' => 'required|file|max:102400',
             'map_id' => 'nullable|exists:mappen,id'
         ]);
 
