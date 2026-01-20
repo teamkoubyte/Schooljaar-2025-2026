@@ -17,6 +17,6 @@ public class HelloApplication extends Application {
         BorderPane root;
         VBox vbox;
         ScrollPane scrollPane;
-        
+
     }
 }
