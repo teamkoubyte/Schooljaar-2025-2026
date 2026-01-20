@@ -21,8 +21,7 @@
 ![ipVsMAC](images/ipVsMAC.png)
 
 ## Hoe het MAC-adres van een pc opzoeken?
-1. Druk op de Windows-toets en typ cmd om de opdrachtprompt (command prompt) te bekomen.
-
+1. Druk op de Windows-toets en typ cmd om de opdrachtprompt (command prompt) te bekomen.<br>
 ![cmd](images/cmd.png)
 
 2. Typ ipconfig /all
