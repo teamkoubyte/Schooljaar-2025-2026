@@ -5,7 +5,6 @@
 ## Vocabulary
 ![](./Unit4Voc.png)
 ![](./Unit4Voc2.png)
-![](./Unit4Voc2.png)
 
 ---
 
