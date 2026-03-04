@@ -2,16 +2,16 @@ package com.example.abstracteklassenenabstractemethodes;
 
 import javafx.scene.paint.Color;
 
-public class GelijkzijdigeDriehoek {
+public class GelijkzijdigeDriehoek extends Figuur {
     private double basis;
     private double hoogte;
 
     public GelijkzijdigeDriehoek(Color kleur) {
-        super(kleur);
+        setKleur(kleur);
     }
 
     public GelijkzijdigeDriehoek(Color kleur, double basis, double hoogte) {
-        super(kleur);
+        setKleur(kleur);
         this.basis = basis;
         this.hoogte = hoogte;
     }
@@ -39,11 +39,11 @@ public class GelijkzijdigeDriehoek {
     
     @Override
     public double berekenOppervlakte() {
-        return zijde * zijde;
+        return (basis * hoogte) / 2.0;
     }
 
     @Override
     public String toString() {
-        return "GelijkzijdigeDriehoek [basis" + basis + ", hoogte=" + hoogte + ", " + super.toString() + "]";
+        return "GelijkzijdigeDriehoek[basis=" + basis + ", hoogte=" + hoogte + ", kleur=" + getKleur() + "]";
     }
 }

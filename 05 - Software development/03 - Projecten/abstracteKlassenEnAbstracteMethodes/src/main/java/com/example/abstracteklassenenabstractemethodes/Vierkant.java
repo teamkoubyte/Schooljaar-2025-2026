@@ -6,7 +6,11 @@ public class Vierkant extends Figuur {
     private double zijde;
 
     public Vierkant(Color kleur) {
-        super(kleur);
+        setKleur(kleur);
+    }
+
+    public Vierkant(Color kleur, double zijde) {
+        setKleur(kleur);
         this.zijde = zijde;
     }
 
@@ -30,6 +34,6 @@ public class Vierkant extends Figuur {
 
     @Override
     public String toString() {
-        return "Vierkant [zijde=" + zijde + ", " + super.toString() + "]";
+        return "Vierkant[zijde=" + zijde + ", kleur=" + getKleur() + "]";
     }
 }

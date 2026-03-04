@@ -3,7 +3,10 @@ package com.example.abstracteklassenenabstractemethodes;
 import javafx.scene.paint.Color;
 
 public abstract class Figuur {
-    protected Color kleur;
+    private Color kleur;
+
+    public Figuur() {
+    }
 
     public Figuur(Color kleur) {
         this.kleur = kleur;
@@ -13,11 +16,16 @@ public abstract class Figuur {
         return kleur;
     }
 
+    public void setKleur(Color kleur) {
+        this.kleur = kleur;
+    }
+
     public abstract double berekenOmtrek();
-    public abstract double berkenOppervlakte();
+
+    public abstract double berekenOppervlakte();
 
     @Override
     public String toString() {
-        return "Kleur: " + kleur;
+        return "kleur=" + kleur;
     }
 }
