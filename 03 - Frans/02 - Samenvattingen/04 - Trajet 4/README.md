@@ -3,6 +3,7 @@
 ---
 
 ## Vocabulaire
+![](./leFémininDesMétiers.png)
 ![](./mots-cles8.png)
 ![](./mots-cles9.png)
 ![](./mots-cles10.png)
