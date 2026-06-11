@@ -93,48 +93,48 @@ De detective als genre ontstond onder de impuls van nieuwe methodes in **politie
 
 | Woord | Betekenis |
 |---|---|
-| **greenwashing** | Misleidende communicatie, bedoeld om producten of activiteiten als milieuvriendelijk te presenteren terwijl ze dat in feite niet zijn. |
-| **duurzaamheidsclaims** | Beweringen die de indruk wekken dat een product of activiteit niet of nauwelijks milieu- en klimaatschadelijk is. |
-| **corebusiness** | De kernactiviteit van een onderneming of organisatie. |
-| **fossiele brandstoffen** | Vervuilende bronnen van energie waarbij koolstofdioxide (CO₂) vrijkomt bij verbranding. Aardgas, aardolie en steenkool zijn de belangrijkste fossiele brandstoffen. |
-| **energietransitie** | Het omvormen van de huidige energievoorziening naar een milieuvriendelijker systeem. Doorgaans bedoelt men hier een verschuiving van het gebruik van fossiele energie naar energie uit hernieuwbare bronnen (zoals water-, zonne- en windenergie). |
-| **biologische landbouw** | Een beheer- en voedselproductiesysteem dat de beste milieupraktijken combineert met grote biodiversiteit, het behoud van natuurlijke hulpbronnen en het grootste respect voor dierenwelzijn. |
-| **biodiversiteit** | De verscheidenheid aan levende organismen (planten, dieren, micro-organismen) in een bepaald gebied of ecosysteem. |
-| **genetisch gemodificeerde organismen (GMO)** | Organismen waarvan het erfelijk materiaal (DNA) kunstmatig is veranderd. |
-| **rotatie van gewassen** | Het afwisselen van verschillende gewassen op hetzelfde stuk grond om de bodem gezond te houden. |
-| **landbouwareaal** | Het totale oppervlakte aan landbouwgrond. |
-| **klimaatrobuust** | Bestand tegen de gevolgen van klimaatverandering, zoals extreme droogte of natte periodes. |
-| **precisielandbouw** | Een vorm van landbouw waarbij technologie wordt gebruikt om gewassen en bodem zeer nauwkeurig te beheren en te behandelen. |
-| **agro-ecologisch** | Betrekking hebbend op de toepassing van ecologische principes in de landbouw. |
-| **proeftuin** | Een locatie waar nieuwe technieken of methoden in de praktijk worden uitgetest. |
-| **percelen** | Afgebakende stukken landbouwgrond. |
-| **resolutie** | De mate van detail en scherpte van een beeld of dataset. |
-| **satellietdata** | Gegevens die verzameld worden via satellieten, bijvoorbeeld over gewasgroei of bodemkwaliteit. |
-| **innovatief** | Vernieuwend; gericht op het toepassen van nieuwe ideeën of technieken. |
-| **Gemeenschappelijk Landbouwbeleid (GLB)** | Het landbouwbeleid van de Europese Unie dat tot doel heeft de landbouw efficiënter, duurzamer en klimaatrobuuster te maken. |
-| **klimaatklevers** | Klimaatactivisten die zich vastkleven aan kunstwerken of gebouwen als protestactie voor klimaatactie. |
-| **energietoerisme** | Het reizen naar landen met lagere energieprijzen om zo de hoge energiefactuur in eigen land te ontwijken. |
-| **vliegschaamte** | Het schaamtegevoel dat iemand ervaart wanneer hij frequent vliegt, wetende dat dit schadelijk is voor het klimaat. |
-| **klimaatarmoede** | Armoede die veroorzaakt of verergerd wordt door de gevolgen van klimaatverandering, zoals stijgende energieprijzen en voedselkosten. |
-| **tegelwippen** | Het verwijderen van tegels uit tuinen of op straat en ze vervangen door groen, om zo verharding tegen te gaan en de omgeving klimaatbestendiger te maken. |
-| **hoogtechnologisch** | Gebaseerd op geavanceerde technologie. |
-| **geautomatiseerd productieproces** | Een productieproces dat grotendeels of volledig door machines of computers wordt uitgevoerd zonder menselijke tussenkomst. |
-| **automatisering** | Het vervangen van menselijke arbeid door machines of computersystemen. |
-| **machinepak** | Een park met productie- en verwerkingsmachines binnen een industriële omgeving. |
-| **maritieme sector** | De sector die betrekking heeft op de zee, scheepvaart en alles wat daarmee samenhangt. |
-| **simulatortrainingen** | Opleidingen waarbij men vaardigheden oefent in een nagebootste (gesimuleerde) omgeving. |
-| **anatomie** | De wetenschap die de bouw en structuur van het lichaam van mensen, dieren of planten bestudeert. |
-| **veterinaire technieken** | Technieken en methoden die worden gebruikt in de diergeneeskunde. |
-| **affiniteit** | Een natuurlijke aantrekking of verbondenheid met iets of iemand; aanleg voor iets. |
-| **stakeholders** | Alle partijen die belang hebben bij of invloed ondervinden van een organisatie of project (medewerkers, klanten, investeerders, enz.). |
-| **exploitanten** | Personen of bedrijven die iets beheren en exploiteren (uitbaten) voor commercieel gebruik. |
-| **helikopterzicht** | Het vermogen om een situatie van bovenaf, in haar geheel te overzien, zonder verloren te gaan in details. |
-| **hands-onmentaliteit** | Een praktijkgerichte instelling waarbij men zelf actief aan de slag gaat in plaats van enkel te observeren of te plannen. |
-| **maintenanceafdeling** | De afdeling binnen een bedrijf die verantwoordelijk is voor het onderhoud van machines en installaties. |
-| **ploegenstelsel** | Een werksysteem waarbij meerdere groepen (ploegen) elkaar afwisselen om een bedrijf doorlopend draaiende te houden. |
-| **monitoringsystemen** | Systemen die continu gegevens verzamelen en controleren om processen of situaties op te volgen. |
-| **preventieve maatregelen** | Maatregelen die vooraf worden genomen om een probleem of gevaar te voorkomen. |
-| **navigatie** | Het bepalen van de koers of route om van de ene naar de andere locatie te gaan. |
+| **greenwashing** | Doen alsof een product of bedrijf goed is voor het milieu, terwijl dat eigenlijk niet (helemaal) zo is. |
+| **duurzaamheidsclaims** | Uitspraken die zeggen dat iets weinig of geen schade doet aan het milieu en het klimaat. |
+| **corebusiness** | Het belangrijkste werk van een bedrijf of organisatie. |
+| **fossiele brandstoffen** | Vervuilende energiebronnen zoals aardgas, aardolie en steenkool. Bij verbranding komt er CO₂ vrij. |
+| **energietransitie** | De overstap van vervuilende energie (zoals olie en gas) naar schone energie (zoals zon, wind en water). |
+| **biologische landbouw** | Een manier van landbouw die goed is voor het milieu, de natuur en het welzijn van dieren. |
+| **biodiversiteit** | Hoeveel verschillende planten, dieren en andere levende wezens er ergens voorkomen. |
+| **genetisch gemodificeerde organismen (GMO)** | Planten, dieren of andere organismen waarvan het DNA kunstmatig is aangepast. |
+| **rotatie van gewassen** | Elk jaar een ander gewas op hetzelfde stuk grond planten, zodat de bodem gezond blijft. |
+| **landbouwareaal** | De totale oppervlakte van de grond die gebruikt wordt voor landbouw. |
+| **klimaatrobuust** | Bestand tegen de gevolgen van klimaatverandering, zoals droogte of veel regen. |
+| **precisielandbouw** | Landbouw waarbij technologie gebruikt wordt om gewassen en bodem heel precies te verzorgen. |
+| **agro-ecologisch** | Landbouw waarbij rekening gehouden wordt met de natuur. |
+| **proeftuin** | Een plek waar nieuwe technieken of ideeën uitgetest worden. |
+| **percelen** | Stukken landbouwgrond met een duidelijke grens. |
+| **resolutie** | Hoe scherp of gedetailleerd een beeld of gegevensbestand is. |
+| **satellietdata** | Informatie die satellieten verzamelen, bijvoorbeeld over hoe gewassen groeien of hoe goed de bodem is. |
+| **innovatief** | Vernieuwend; met nieuwe ideeën of technieken. |
+| **Gemeenschappelijk Landbouwbeleid (GLB)** | De regels van de Europese Unie om landbouw efficiënter, duurzamer en klimaatbestendiger te maken. |
+| **klimaatklevers** | Klimaatactivisten die zich vastplakken aan kunstwerken of gebouwen om te protesteren voor het klimaat. |
+| **energietoerisme** | Naar een ander land reizen omdat energie daar goedkoper is, om zo een hoge energiefactuur thuis te vermijden. |
+| **vliegschaamte** | Je schamen omdat je vaak vliegt, terwijl je weet dat dit slecht is voor het klimaat. |
+| **klimaatarmoede** | Armoede die veroorzaakt of erger gemaakt wordt door klimaatverandering, bijvoorbeeld door duurdere energie en voeding. |
+| **tegelwippen** | Tegels uit de tuin of straat halen en er planten voor in de plaats zetten, tegen wateroverlast en hitte. |
+| **hoogtechnologisch** | Met heel geavanceerde technologie. |
+| **geautomatiseerd productieproces** | Een productieproces dat door machines of computers wordt gedaan, zonder dat mensen moeten ingrijpen. |
+| **automatisering** | Werk dat vroeger door mensen gedaan werd, laten overnemen door machines of computers. |
+| **machinepark** | Alle machines die een bedrijf gebruikt om producten te maken of te verwerken. |
+| **maritieme sector** | Alles wat met de zee en de scheepvaart te maken heeft. |
+| **simulatortrainingen** | Oefenen in een nagemaakte omgeving die op de echte situatie lijkt. |
+| **anatomie** | De wetenschap die bestudeert hoe het lichaam van mensen, dieren of planten in elkaar zit. |
+| **veterinaire technieken** | Technieken die dierenartsen gebruiken. |
+| **affiniteit** | Een natuurlijke interesse in of aanleg voor iets. |
+| **stakeholders** | Alle mensen of bedrijven die met een organisatie of project te maken hebben, zoals werknemers, klanten en investeerders. |
+| **exploitanten** | Personen of bedrijven die iets runnen om er geld mee te verdienen. |
+| **helikopterzicht** | Het overzicht houden over een situatie, zonder te verdwalen in de details. |
+| **hands-onmentaliteit** | Zelf actief aan de slag gaan, in plaats van alleen toe te kijken of te plannen. |
+| **maintenanceafdeling** | De afdeling die de machines en installaties van een bedrijf onderhoudt. |
+| **ploegenstelsel** | Een systeem waarbij verschillende groepen werknemers elkaar afwisselen, zodat een bedrijf altijd kan blijven draaien. |
+| **monitoringsystemen** | Systemen die voortdurend gegevens verzamelen om iets in de gaten te houden. |
+| **preventieve maatregelen** | Maatregelen die je vooraf neemt om een probleem te voorkomen. |
+| **navigatie** | Bepalen welke weg of route je moet nemen om ergens te komen. |
 
 ## Deel 2 - Taalverandering: het Nederlands
 
