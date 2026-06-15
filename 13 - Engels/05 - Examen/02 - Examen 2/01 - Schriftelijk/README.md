@@ -5,7 +5,7 @@
 ## Vocabulary
 ![](./Unit4Voc.png)
 ![](./Unit4Voc2.png)
-![](./Unit4Voc2.png)
+![](./Unit4Voc3.png)
 
 ---
 
@@ -27,7 +27,7 @@
 ## Vocabulary
 ![](./unit5Voc.png)
 ![](./unit5Voc2.png)
-![](./unit5Voc2.png)
+![](./unit5Voc3.png)
 
 ---
 
@@ -46,7 +46,6 @@
 
 ## Vocabulary
 ![](./unit6Voc.png)
-![](./unit6Voc2.png)
 ![](./unit6Voc2.png)
 
 ---
