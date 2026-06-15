@@ -7,6 +7,8 @@
 ![](./l'articleApresLaNegation.png)
 ![](./laPlaceDeLaNegation.png)
 ![](./repondreNegativement.png)
+![](./moiSI.png)
+![](./deApresUneQuantite.png)
 
 ---
 
