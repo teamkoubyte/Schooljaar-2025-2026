@@ -7,6 +7,8 @@
 
 ### H1: De schilvormige opbouw van de geosfeer
 
+> ⚠️ **1. Informatie uit seismische golven: NIET te kennen**
+
 **Indeling volgens fysische eigenschappen** (vast/vloeibaar/plastisch):
 
 | Laag | Kenmerken |
@@ -55,7 +57,7 @@
 - Pacifische plaat = enkel oceanische korst
 
 **Mantelpluimen en hotspots:**
-- Hete stromen aan ondergrens mantel (3000°C) → **mantelpluimen** (opstijgend materiaal)
+- Hete stromen aan ondergrens mantel (3000°C) → **mantelpuimen** (opstijgend materiaal)
 - Kunnen **hotspots/gloeipunten** veroorzaken dicht bij het aardoppervlak
 
 **Ontstaan van breuken (stap voor stap):**
@@ -91,6 +93,9 @@
 - Trilling bij breken/verschuiven van gesteentemassa's na jaren opgebouwde spanning
 - **Hypocentrum** = plek ONDER het aardoppervlak waar aardbeving ontstaat
 - **Epicentrum** = plek OP aardoppervlak loodrecht BOVEN hypocentrum
+
+> ⚠️ **2.2 Registratie van aardbevingen (seismograaf): NIET te kennen**
+
 - **Schaal van Richter** = logaritmisch (elke sprong ×10), maar boven 7.0 niet meer correct
 - **Seismische momentmagnitudeschaal** = nieuwe schaal (vervangt Richter boven 7.0)
 - Zwaarste aardbevingen bij: afbrekende plaatranden en transforme plaatranden
@@ -148,12 +153,12 @@
 - In België:
   - **Oxidatie:** ijzerhoudende mineralen roesten door zuurstof (bv. ijzerzandsteen in kerk Aarschot)
   - **Carbonatie:** zuur water (hoog CO₂) lost kalksteen op → barsten → karstverschijnselen (grotten)
-
+  
 > ⚠️ Soorten karstverschijnselen: NIET te kennen, alleen wat carbonatie is
 
 **3. Biologische verwering:**
 - Inwerking van planten(wortels) of organismen
-- Voorbeelden: uitwerpselen dieren, korstmossen die zuur maken, plantenwortels die openwrikken
+- Voorbeelden: uitwerpselen dieren, korstmossen die zuur maken, plantenwortels die openWrikken
 
 **Massabewegingen (enkel door zwaartekracht):**
 
