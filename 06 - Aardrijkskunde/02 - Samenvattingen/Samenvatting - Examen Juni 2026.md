@@ -7,6 +7,8 @@
 
 ### H1: De schilvormige opbouw van de geosfeer
 
+> ⚠️ **1. Informatie uit seismische golven: NIET te kennen**
+
 **Indeling volgens fysische eigenschappen** (vast/vloeibaar/plastisch):
 
 | Laag | Kenmerken |
@@ -91,6 +93,9 @@
 - Trilling bij breken/verschuiven van gesteentemassa's na jaren opgebouwde spanning
 - **Hypocentrum** = plek ONDER het aardoppervlak waar aardbeving ontstaat
 - **Epicentrum** = plek OP aardoppervlak loodrecht BOVEN hypocentrum
+
+> ⚠️ **2.2 Registratie van aardbevingen (seismograaf): NIET te kennen**
+
 - **Schaal van Richter** = logaritmisch (elke sprong ×10), maar boven 7.0 niet meer correct
 - **Seismische momentmagnitudeschaal** = nieuwe schaal (vervangt Richter boven 7.0)
 - Zwaarste aardbevingen bij: afbrekende plaatranden en transforme plaatranden
