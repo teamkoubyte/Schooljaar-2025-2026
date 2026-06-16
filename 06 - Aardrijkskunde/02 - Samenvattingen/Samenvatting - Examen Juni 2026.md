@@ -378,8 +378,11 @@
 
 ## KLIMAATADAPTATIE EN MITIGATIE
 
-- **Klimaatmitigatie** = maatregelen om de oorzaken van klimaatverandering te verminderen (bv. minder CO₂ uitstoten, hernieuwbare energie, ontharding)
-- **Klimaatadaptatie** = maatregelen om je aan te passen aan de gevolgen van klimaatverandering (bv. wachtbekkens tegen overstromingen, koele plekken in de stad, droogteresistente gewassen)
+Context: versterkt broeikaseffect door menselijke activiteit → klimaat warmt snel op.
+
+- **Klimaatmitigatie** = maatregelen nemen om de **oorzaken** van klimaatverandering af te remmen of te verminderen. Voornamelijk door de uitstoot van broeikasgassen te verminderen én/of broeikasgassen die al in de atmosfeer zijn te verwijderen.
+
+- **Klimaatadaptatie** = het **aanpassen aan de gevolgen** van klimaatverandering die reeds bezig zijn of onvermijdbaar zijn. Onze kwetsbaarheid voor klimaatverandering verminderen.
 
 ---
 
