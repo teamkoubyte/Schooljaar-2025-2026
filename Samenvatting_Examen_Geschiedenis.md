@@ -1,5 +1,5 @@
 # Samenvatting Examen Geschiedenis — 6 BO A&D
-**Leerkracht:** T. Braspenning | **Duur examen:** 20-30 min | **Meebrengen:** schrijfgerief
+**Leerkracht:** T. Braspenning | **Duur examen:** 15 min | **Meebrengen:** schrijfgerief
 
 ## 📅 Studieplanning (21u03 → 11u15)
 | Blok | Tijd | Onderdeel |
