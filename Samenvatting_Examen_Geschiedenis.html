@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examen Geschiedenis — Samenvatting</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #f59e0b;
+    --accent2: #38bdf8;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --good: #22c55e;
+    --bad: #ef4444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 80px 0;
+    line-height: 1.55;
+  }
+  header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 28px 20px 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--accent);
+  }
+  header h1 { margin: 0 0 6px; font-size: 1.6em; color: var(--accent); }
+  header p { margin: 4px 0; color: var(--muted); font-size: 0.95em; }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    padding: 14px 10px;
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #334155;
+  }
+  nav a {
+    color: var(--accent2);
+    text-decoration: none;
+    font-size: 0.85em;
+    padding: 6px 10px;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  nav a:hover { background: #334155; }
+  main { max-width: 900px; margin: 0 auto; padding: 20px 16px; }
+  section {
+    background: var(--card);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 22px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  }
+  h2 {
+    color: var(--accent);
+    border-bottom: 2px solid #334155;
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+  h3 { color: var(--accent2); margin-top: 26px; }
+  h4 { color: #fcd34d; margin: 18px 0 6px; }
+  .kek {
+    background: #0b3a3a;
+    border-left: 4px solid var(--good);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 10px 0 16px;
+    font-size: 0.92em;
+  }
+  .kek b { color: var(--good); }
+  .begrip { color: #fcd34d; font-weight: 600; }
+  figure {
+    margin: 14px 0;
+    text-align: center;
+  }
+  figure img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 1px solid #334155;
+  }
+  figcaption {
+    font-size: 0.8em;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .img-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .img-row figure { flex: 1 1 260px; max-width: 320px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.92em; }
+  th, td { border: 1px solid #334155; padding: 8px 10px; text-align: left; }
+  th { background: #0f172a; color: var(--accent); }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .timeline {
+    list-style: none;
+    padding-left: 0;
+    border-left: 3px solid var(--accent2);
+    margin-left: 8px;
+  }
+  .timeline li {
+    position: relative;
+    padding: 4px 0 4px 18px;
+    margin-bottom: 2px;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent2);
+    border-radius: 50%;
+  }
+  .timeline b { color: var(--accent2); }
+  details {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 10px 0;
+  }
+  summary { cursor: pointer; color: var(--accent2); font-weight: 600; }
+  .quiz-q {
+    background: #0f172a;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: 1px solid #334155;
+  }
+  .quiz-q p.question { font-weight: 600; margin: 0 0 8px; }
+  .quiz-opts { display: flex; flex-direction: column; gap: 6px; }
+  .quiz-opts button {
+    background: #1e293b;
+    color: var(--text);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.92em;
+  }
+  .quiz-opts button:hover { background: #334155; }
+  .quiz-opts button.correct { background: #14532d; border-color: var(--good); }
+  .quiz-opts button.wrong { background: #450a0a; border-color: var(--bad); }
+  .quiz-feedback { margin-top: 8px; font-size: 0.88em; color: var(--muted); display: none; }
+  .progress-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 6px;
+    background: #1e293b;
+    z-index: 20;
+  }
+  .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width .3s; }
+  .score-box {
+    position: fixed;
+    bottom: 12px; right: 12px;
+    background: var(--card);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 0.85em;
+    z-index: 20;
+  }
+  .checklist label { display: block; margin-bottom: 6px; cursor: pointer; }
+  .checklist input { margin-right: 8px; }
+  .mondeling-tip {
+    background: #3b2a0b;
+    border-left: 4px solid var(--accent);
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 14px 0;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📜 Examen Geschiedenis — Samenvatting</h1>
+  <p>6 BO A&amp;D · Leerkracht T. Braspenning · Mondeling examen, 20–30 min</p>
+  <p>Studietijd: vanavond 21u03 → morgen 11u15</p>
+</header>
+
+<nav>
+  <a href="#plan">📅 Planning</a>
+  <a href="#deel1">🟥 Genocide &amp; Holocaust</a>
+  <a href="#deel2">❄️ Koude Oorlog</a>
+  <a href="#deel3">🕊️ Midden-Oosten</a>
+  <a href="#tijdlijn">🕐 Tijdlijn</a>
+  <a href="#begrippen">📖 Begrippen</a>
+  <a href="#quiz">❓ Zelftest</a>
+  <a href="#checklist">✅ Checklist</a>
+</nav>
+
+<main>
+
+<section id="mondeling-tip">
+  <div class="mondeling-tip">
+    🎤 <b>Let op: dit is een MONDELING examen.</b> Het gaat niet om dingen herkennen tussen meerdere keuzes, maar om het <b>hardop en vloeiend kunnen uitleggen</b> van een onderwerp — alsof je het aan iemand vertelt. Gebruik de multiplechoice-zelftest verderop om snel te zien wát je nog niet kent, maar oefen daarna telkens door het antwoord <b>luidop te vertellen in volledige zinnen</b> (oorzaak → gevolg → besluit). Dat is precies wat de leraar morgen van je verwacht.
+  </div>
+</section>
+
+<section id="plan">
+<h2>📅 Studieplanning</h2>
+<table>
+<tr><th>Blok</th><th>Tijd</th><th>Onderdeel</th></tr>
+<tr><td>1</td><td>21u00 – 22u00</td><td>Genocide (8 fases) + Casusstudie Holocaust</td></tr>
+<tr><td>2</td><td>22u00 – 23u00</td><td>Koude Oorlog: Ontstaan + Vreedzame co-existentie/crisis</td></tr>
+<tr><td>—</td><td>23u00</td><td><b>Slapen</b> — slaap is cruciaal om dit vast te zetten in je geheugen</td></tr>
+<tr><td>3</td><td>07u00 – 08u00</td><td>Koude Oorlog: Azië + Einde Koude Oorlog</td></tr>
+<tr><td>4</td><td>08u00 – 09u00</td><td>Midden-Oosten: Israël-Palestina</td></tr>
+<tr><td>5</td><td>09u00 – 10u15</td><td>Zelftest hieronder + hardop oefenen uitleggen</td></tr>
+<tr><td>6</td><td>10u15 – 11u15</td><td>Tijdlijn + begrippen laatste keer scannen, rust</td></tr>
+</table>
+</section>
+
+<section id="deel1">
+<h2>🟥 DEEL 1 — Project Burgerschap: Massageweld en discriminatie</h2>
+
+<h3>1.1 Draaiboek van een genocide</h3>
+<div class="kek"><b>Kennen en kunnen:</b> begrip genocide uitleggen · 8 stappen kennen + toepassen op de Holocaust · herkennen in actuele gebeurtenissen.</div>
+<p><span class="begrip">Genocide</span> = volkenmoord; stelselmatige en opzettelijke uitroeiing van een etnische groep (of deel ervan). Stanton's <b>8 fases</b>:</p>
+<ol>
+<li><b>Classificatie</b> — verdeling in "wij" en "zij" (etnisch/religieus); op zich nog geen probleem.</li>
+<li><b>Symbolisering</b> — groepen krijgen symbolen/uiterlijke kenmerken + stereotypen toegeschreven.</li>
+<li><b>Dehumanisering</b> — andere groep ontmenselijkt (vergeleken met dieren/ongedierte) → drempel naar moord verlaagt.</li>
+<li><b>Organisering</b> — staat/milities plannen de moorden (milities zodat staat niet rechtstreeks schuldig lijkt).</li>
+<li><b>Polarisatie</b> — propaganda zet groepen tegen elkaar op, wetten verbieden contact, gematigden vervolgd.</li>
+<li><b>Voorbereiding</b> — slachtoffers geïdentificeerd, dodenlijsten, symbolen verplicht, eigendom afgenomen, naar kampen gestuurd.</li>
+<li><b>Uitroeiing</b> — de eigenlijke genocide; leger helpt mee als staat het organiseert.</li>
+<li><b>Ontkenning</b> — bewijzen vernietigd, misdaden ontkend, slachtoffers beschuldigd.</li>
+</ol>
+
+<figure>
+<img src="img_geschiedenis/genocide_classificatie_rwanda_id.jpg" alt="Rwandees identiteitsbewijs met etnische classificatie">
+<figcaption>Voorbeeld van <b>classificatie</b>: een identiteitskaart met verplichte etnische vermelding (zoals gebruikt vóór de Rwandese genocide) — vergelijk met de Jodenster bij de nazi's.</figcaption>
+</figure>
+
+<details>
+<summary>🎤 Mondeling oefenen: leg de 8 fases uit met de Holocaust als voorbeeld</summary>
+<p>Probeer dit hardop: "Eerst werden Joden geclassificeerd als apart van de Duitsers. Daarna kregen ze symbolen zoals de Jodenster. Vervolgens werden ze ontmenselijkt via propaganda van Goebbels... " — vertel zo de hele ketting tot aan de negationismewet door.</p>
+</details>
+
+<h3>1.2 Casusstudie: De Holocaust</h3>
+<div class="kek"><b>Kennen en kunnen:</b> begrippen Holocaust, antisemitisme, concentratiekamp, negationisme, vernietigingskamp · tijdlijn (Kristalnacht, Neurenbergwetten, uitroeiing) · regio uitroeiingskampen op kaart · fases genocide toepassen op de Holocaust.</p></div>
+
+<h4>Antisemitisme en Jodenvervolging in Duitsland</h4>
+<ul>
+<li>Jodenhaat (<span class="begrip">antisemitisme</span>) bestond al eeuwen — Joden als "zondebok" (bv. schuld van de pest in de Middeleeuwen).</li>
+<li>Economische crisis jaren '20-'30 → <b>Goebbels</b> (propagandameester) legt schuld bij de Joden.</li>
+<li><b>Hitler</b>: rassentheorie (Mein Kampf) — Arisch ras "superieur", Joods ras "onzuiver/gemengd".</li>
+<li><b>Neurenberg wetten (1935)</b>: Joden verliezen Duitse nationaliteit, verplichte Davidster, gemengde huwelijken verboden.</li>
+<li><b>Kristalnacht (9–10 november 1938)</b>: pogrom — synagogen/winkels/scholen vernield, Joden vermoord op straat.</li>
+</ul>
+
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig31_propagandaposter.png"><figcaption>FIG 31 — Propagandaposter: schuld van de crisis bij de Joden gelegd</figcaption></figure>
+</div>
+
+<h4>De Holocaust (uitvoering)</h4>
+<ul>
+<li>Joden verzameld in <span class="begrip">getto's</span> → gedeporteerd naar <span class="begrip">concentratiekampen</span>.</li>
+<li><b>Einzatsgruppen</b>: SS-groepen die hele dorpen uitmoordden in Oost-Europa = "<b>Holocaust met de kogel</b>".</li>
+<li><b>Wannseeconferentie (20 januari 1942)</b>: besluit tot industriële vernietiging van het Joodse ras.</li>
+<li><span class="begrip">Vernietigingskampen</span> in Polen (bekendst: <b>Auschwitz-Birkenau</b>) met gaskamers. Werkbekwamen gespaard; kinderen/gehandicapten direct naar gaskamers.</li>
+<li>Bevrijd door Sovjettroepen, <b>januari 1945</b>. <b>~6 miljoen Joden</b> vermoord; ook homoseksuelen, communisten, Roma, gehandicapten.</li>
+</ul>
+
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig33_getto.png"><figcaption>FIG 33 — Verzameling van de Joodse bevolking in getto's</figcaption></figure>
+<figure><img src="img_geschiedenis/fig34_kampsymbolen.png"><figcaption>FIG 34 — Symbolen/markeringen voor gevangenen in concentratiekampen</figcaption></figure>
+</div>
+
+<h4>Na de Holocaust</h4>
+<ul>
+<li><b>Neurenbergse processen (nov. 1945 – okt. 1946)</b>: nazi-leiders veroordeeld (dood/levenslang). Hitler &amp; Goebbels pleegden zelfmoord.</li>
+<li><b>Adolf Eichmann</b> (architect van de Holocaust) vluchtte naar Argentinië → gevangen door de Mossad in <b>1960</b>.</li>
+<li><b>Jozef Mengele</b> vluchtte ook naar Argentinië (experimenten op tweelingen/kinderen).</li>
+<li><span class="begrip">Negationismewet</span> (<b>1995, België</b>): ontkennen/goedkeuren/minimaliseren van nazidaden strafbaar.</li>
+</ul>
+
+<figure>
+<img src="img_geschiedenis/fig35_neurenbergprocessen.png">
+<figcaption>FIG 35 — Beklaagden bij de Neurenbergprocessen</figcaption>
+</figure>
+
+<details>
+<summary>🎤 Mondeling oefenen: vertel het verhaal van de Holocaust in 1 minuut</summary>
+<p>Structuur: antisemitisme → Neurenberg wetten → Kristalnacht → getto's → concentratiekampen → Wannseeconferentie → vernietigingskampen → bevrijding → Neurenbergprocessen → ontkenning vandaag.</p>
+</details>
+</section>
+
+<section id="deel2">
+<h2>❄️ DEEL 2 — Hoofdstuk 5: De Koude Oorlog</h2>
+<figure>
+<img src="img_geschiedenis/coldwar_cover.png" style="max-width:320px;">
+</figure>
+
+<h3>2.1 Studie 1: Het ontstaan van de Koude Oorlog</h3>
+<div class="kek"><b>Begrippen:</b> satellietstaten, IJzeren Gordijn, bipolaire wereld, Koude Oorlog.</div>
+<ul>
+<li><b>Potsdam &amp; Jalta (1945)</b>: verdeling Duitsland in 4 bezettingszones (ook Berlijn, in Sovjetzone).</li>
+<li>Oost-Europese landen worden <span class="begrip">satellietstaten</span> van de USSR (Polen, Tsjechië, Hongarije) — beloofde verkiezingen kwamen er niet.</li>
+<li><b>Churchill (1946)</b>: spreekt van het <span class="begrip">IJzeren Gordijn</span> — grens tussen kapitalistisch Westen en communistisch Oosten.</li>
+</ul>
+
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig43_verdeling_duitsland.png"><figcaption>FIG 43 — Verdeling van Duitsland na WOII</figcaption></figure>
+<figure><img src="img_geschiedenis/fig44_uitzetting_duitsers.png"><figcaption>FIG 44 — Gedwongen uitzetting van Duitsers uit Oost-Europa</figcaption></figure>
+</div>
+
+<h4>Politiek</h4>
+<ul>
+<li><b>Trumandoctrine (1947)</b>: VS steunt elk land dat zich bedreigd voelt door communisme.</li>
+<li><b>NAVO (1949)</b> — militair bondgenootschap van het Westen.</li>
+<li><b>Warschaupact (1955)</b> — communistisch tegenbondgenootschap (reactie op NAVO-lidmaatschap West-Duitsland).</li>
+<li><b>1949</b>: Sovjet atoombom → einde Amerikaans militair overwicht → wapenwedloop.</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig45_navo_warschaupact.png" style="max-width:420px;">
+<figcaption>FIG 45 — Oostblok en Westblok (NAVO en Warschaupact)</figcaption>
+</figure>
+
+<h4>Economisch</h4>
+<ul>
+<li><b>Marshallplan (1947)</b>: Amerikaanse steun voor wederopbouw Europa (geweigerd in Oostblok onder Sovjetdruk).</li>
+<li><b>COMECON (1949)</b>: Sovjet-tegenhanger; leden moesten planeconomie invoeren.</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig12_marshallhulp.png" style="max-width:420px;">
+<figcaption>FIG 12 — Gebruik van Marshallhulp in Europa</figcaption>
+</figure>
+
+<h3>2.2 Studie 2: Vreedzame co-existentie en crisis</h3>
+<div class="kek"><b>Begrippen:</b> vreedzame co-existentie, brain drain, MAD-principe.</div>
+<ul>
+<li><b>1953</b>: Stalin sterft → <b>Chroestsjov</b> volgt op → beleid van <span class="begrip">vreedzame co-existentie</span> (vredevol naast elkaar leven, invloedssferen respecteren).</li>
+<li><b>Hongaarse opstand (1956)</b>: hardhandig neergeslagen door Warschaupact; Westen grijpt niet in.</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig47_chroestsjov.png" style="max-width:220px;">
+<figcaption>FIG 47 — Nikita Chroestsjov</figcaption>
+</figure>
+
+<h4>De Berlijnse muur</h4>
+<ul>
+<li>1948: Sovjet-blokkade West-Berlijn → Westerse <b>luchtbrug</b> (juni 1948 – mei 1949).</li>
+<li><b>1949</b>: BRD (West-Duitsland) en DDR (Oost-Duitsland) ontstaan.</li>
+<li>Massale <span class="begrip">brain drain</span> (~3 miljoen) van Oost naar West via de open grens in Berlijn.</li>
+<li><b>1961</b>: muur gebouwd rond West-Berlijn om de brain drain te stoppen.</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig48_brd_ddr.png"><figcaption>FIG 48 — De BRD en de DDR</figcaption></figure>
+<figure><img src="img_geschiedenis/fig49_berlijnse_muur.png"><figcaption>FIG 49 — Bouw van de muur rond West-Berlijn</figcaption></figure>
+</div>
+
+<h4>De Cubacrisis (1962)</h4>
+<ul>
+<li>1959: Castro neemt de macht in Cuba (communistisch).</li>
+<li>1961: mislukte CIA-invasie (<b>Varkensbaai</b>).</li>
+<li>Augustus 1962: Sovjets plaatsen kernwapens op Cuba.</li>
+<li>Kennedy plaatst een quarantaine (zeeblokkade).</li>
+<li><span class="begrip">MAD-doctrine</span> (mutually assured destruction) voorkomt een echte oorlog.</li>
+<li>Oplossing: Sovjets halen raketten weg van Cuba; VS haalt in het geheim raketten weg uit Turkije.</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig50_cubacrisis_kaart.png"><figcaption>FIG 50 — De Cubacrisis in kaart</figcaption></figure>
+<figure><img src="img_geschiedenis/fig51_mad_doctrine_cartoon.png"><figcaption>FIG 51 — Cartoon over de MAD-doctrine</figcaption></figure>
+</div>
+
+<h3>2.3 Studie 3: De Koude Oorlog in Azië</h3>
+<div class="kek"><b>Begrippen:</b> containmentpolitiek, dominotheorie, guerrillaoorlog, Derde Wereld.</div>
+<ul>
+<li><b>1949</b>: China wordt communistisch (Mao Zedong wint van de nationalisten).</li>
+<li>VS-reactie: <span class="begrip">containmentpolitiek</span> (verspreiding communisme actief tegengaan).</li>
+<li><span class="begrip">Derde Wereld</span>: landen (Afrika/Azië) die zich niet aansluiten bij een blok → <b>Bandungconferentie (1955)</b>.</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/mao_zedong_propaganda.jpg"><figcaption>Propagandaposter van Mao Zedong</figcaption></figure>
+<figure><img src="img_geschiedenis/fig52_china_spotprent.png"><figcaption>FIG 52 — Amerikaanse spotprent over communistisch China</figcaption></figure>
+<figure><img src="img_geschiedenis/fig13_derde_wereld_kaart.png"><figcaption>FIG 13 — Landen van de Non-Aligned Movement (Derde Wereld)</figcaption></figure>
+</div>
+
+<h4>De Koreaoorlog</h4>
+<ul>
+<li>Korea verdeeld op de <b>38ste breedtegraad</b> (VS-zuiden / USSR-noorden).</li>
+<li>1948: Zuid-Korea (Syngman Rhee) ↔ Noord-Korea (Kim Il Sung).</li>
+<li><b>Juni 1950</b>: Noord-Korea valt het Zuiden binnen.</li>
+<li>VN-troepenmacht (onder VS) grijpt in; China steunt Noord-Korea.</li>
+<li><b>1953</b>: wapenstilstand (geen officiële vrede) → gedemilitariseerde zone. ~2 miljoen burgerslachtoffers.</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/koreaoorlog_kaart.jpg" style="max-width:380px;">
+<figcaption>De Koreaoorlog (1950–1953) — 38ste breedtegraad als grens</figcaption>
+</figure>
+
+<h4>De Vietnamoorlog</h4>
+<ul>
+<li><b>Akkoord van Genève</b>: Vietnam gesplitst op de <b>17de breedtegraad</b>; verkiezingen beloofd maar nooit gehouden.</li>
+<li>VS installeert Ngo Dinh Diem in het Zuiden — vanuit de <span class="begrip">dominotheorie</span> (als Vietnam communistisch valt, valt heel Azië).</li>
+<li>Oorlog vanaf 1957; VS grijpt militair in vanaf <b>1964</b> na het <b>Golf van Tonkin-incident</b> (deels verzonnen aanval).</li>
+<li><b>Vietcong</b>: <span class="begrip">guerrillaoorlog</span> tegen de VS.</li>
+<li>VS gebruikt <b>Agent Orange</b> (ontbladering) en <b>Napalm</b> (brandbommen).</li>
+<li><b>Tet-offensief (1968)</b>: keerpunt — Amerikaans publiek keert zich tegen de oorlog.</li>
+<li>VS trekt zich terug, Noord-Vietnam verovert het land.</li>
+<li>Perspectiefverschil: VS zag het als Koude Oorlog-conflict; Vietnamezen zagen het als <b>onafhankelijkheidsoorlog</b> (na Frankrijk en Japan).</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig17_protest_vietnam.png" style="max-width:280px;">
+<figcaption>FIG 17 — Protest tegen de Vietnamoorlog</figcaption>
+</figure>
+
+<h3>2.4 Studie 4: Détente, confrontatie en het einde van de Koude Oorlog</h3>
+<div class="kek"><b>Begrippen:</b> détente, Brezjnev-doctrine, space race, glasnost, perestrojka.</div>
+
+<h4>Détente (1962–1979)</h4>
+<ul>
+<li><b>Non-proliferatieverdrag (1968)</b>: beperkt kernwapenbezit (5 erkende kernmachten: VS, USSR, China, Frankrijk, VK).</li>
+<li><b>SALT I (1972)</b>: afspraken over langeafstandsraketten.</li>
+<li><span class="begrip">Space race</span>: Sputnik (1957, USSR), Gagarin (1961, USSR), Armstrong op de maan (1969, VS).</li>
+<li><b>Praagse Lente (1968)</b>: Tsjechoslowakije wil "socialisme met menselijk gezicht" → neergeslagen door Brezjnev.</li>
+<li><span class="begrip">Brezjnev-doctrine</span>: USSR mag ingrijpen als satellietstaat te ver van het communisme afdrijft.</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig18_praag_sovjettanks.png" style="max-width:380px;">
+<figcaption>FIG 18 — Inwoners van Praag omsingelen Sovjettanks</figcaption>
+</figure>
+
+<h4>Confrontatie (1979–1985)</h4>
+<ul>
+<li>NAVO <b>dubbelbesluit (1979)</b>: kernraketten plaatsen én ontwapening bespreken.</li>
+<li><b>Sovjetinvasie Afghanistan</b>: steun aan communistisch regime tegen Mujahedeen (gesteund door VS) — "<b>Vietnam van de Sovjet-Unie</b>".</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/brezjnev_satellietstaten_cartoon.jpg"><figcaption>Cartoon: Brezjnev en de satellietstaten die om vrijheid &amp; democratie vragen</figcaption></figure>
+<figure><img src="img_geschiedenis/fig60_mujahedeen_reagan.png"><figcaption>FIG 60 — Mujahedeen in gesprek met president Reagan</figcaption></figure>
+<figure><img src="img_geschiedenis/fig19_kernwapens_voorraad.png"><figcaption>FIG 19 — Voorraad kernwapens in de wereld (1945–2014)</figcaption></figure>
+</div>
+
+<h4>Einde Koude Oorlog (1985–1991)</h4>
+<ul>
+<li><b>1985</b>: Gorbatsjov aan de macht → <span class="begrip">glasnost</span> (openheid) + <span class="begrip">perestrojka</span> (hervorming).</li>
+<li>Brezjnev-doctrine verworpen → satellietstaten krijgen meer vrijheid.</li>
+<li>Hongarije opent grens met Oostenrijk (zomer 1989) → Oost-Duitsers vluchten.</li>
+<li><b>9 november 1989</b>: Val van de Berlijnse Muur. Duitsland herenigd in 1990.</li>
+<li>1989: vrije verkiezingen USSR; Boris Jeltsin (liberaal) verkozen.</li>
+<li><b>1991</b>: Sovjet-Unie officieel ontbonden.</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig22_ijzeren_gordijn_doorknippen.png"><figcaption>FIG 22 — IJzeren Gordijn tussen Hongarije en Oostenrijk wordt doorgeknipt</figcaption></figure>
+<figure><img src="img_geschiedenis/fig23_uiteenvallen_sovjetunie.png"><figcaption>FIG 23 — Het uiteenvallen van de Sovjet-Unie (1991)</figcaption></figure>
+</div>
+
+<details>
+<summary>🎤 Mondeling oefenen: vertel de Koude Oorlog als één doorlopend verhaal</summary>
+<p>Ontstaan (Jalta → IJzeren Gordijn → NAVO/Marshall) → Vreedzame co-existentie (Chroestsjov → muur → Cuba) → Azië (containment → Korea → Vietnam) → Détente (ontwapening → space race) → Confrontatie (Afghanistan) → Einde (Gorbatsjov → muur valt → USSR uiteen). Vertel dit hardop zonder te spieken.</p>
+</details>
+</section>
+
+<section id="deel3">
+<h2>🕊️ DEEL 3 — Problemen in het Midden-Oosten: het Israëlisch-Palestijns conflict</h2>
+<div class="kek"><b>Begrippen:</b> kolonist, Nakba, zionisme, intifada, tweestatenoplossing.</div>
+
+<h3>Het ontstaan van de staat Israël</h3>
+<ul>
+<li><b>Joodse Diaspora</b>: verspreiding van de Joden over de wereld sinds de 6de eeuw v.C.</li>
+<li>Eind 19de eeuw: vervolgingen in Oost-Europa → <span class="begrip">zionisme</span> (beweging voor een eigen Joodse staat in Palestina).</li>
+<li><b>Balfour-declaratie (1917)</b>: Britten beloven zionisten een plek in Palestina.</li>
+<li>Na de Holocaust: massale Joodse migratie naar Palestina.</li>
+<li><b>1947</b>: VN-verdeelplan — Joodse + Arabische staat, Jeruzalem onder VN-controle. Joden akkoord, Arabieren niet.</li>
+<li><span class="begrip">Nakba</span> ("catastrofe"): 750.000 Palestijnen vluchten naar buurlanden/Gazastrook/Westelijke Jordaanoever.</li>
+<li><b>14 mei 1948</b>: staat Israël uitgeroepen. Arabische buurlanden vallen binnen.</li>
+</ul>
+
+<div class="img-row">
+<figure><img src="img_geschiedenis/joodse_diaspora_kaart.jpg"><figcaption>Verspreiding van de Joodse bevolking in Midden-Europa (vóór WOII)</figcaption></figure>
+<figure><img src="img_geschiedenis/fig24_verdeling_palestina.png"><figcaption>FIG 24 — Verdeling van Palestina volgens VN-resolutie 181 (1947)</figcaption></figure>
+<figure><img src="img_geschiedenis/israel_palestina_verdeling_alt.jpg"><figcaption>Verdeelplan: Arabische staat (oranje) vs. Joodse staat (groen)</figcaption></figure>
+</div>
+
+<h3>Conflicten met de buurlanden</h3>
+<ul>
+<li><b>1956</b>: Suezcrisis — Egypte nationaliseert het Suezkanaal → Frankrijk/VK/Israël vallen aan, trekken zich terug onder internationale druk.</li>
+<li><b>Zesdaagse Oorlog (juni 1967)</b>: Israël verovert Jeruzalem, Westelijke Jordaanoever, Gaza, Golanhoogten.</li>
+<li><b>Yom Kippur-oorlog (1973)</b>: Egypte/Syrië verrassingsaanval op een Joodse feestdag; Israël slaat terug.</li>
+<li><b>Camp David-akkoorden (1979)</b>: Israël trekt zich terug uit Sinaï; belofte van Palestijns zelfbestuur (niet nageleefd — meer nederzettingen gebouwd).</li>
+</ul>
+<figure>
+<img src="img_geschiedenis/fig25_bevolking_israel.png" style="max-width:340px;">
+<figcaption>FIG 25 — Bevolking van Israël (Joods = blauw, Palestijns = rood)</figcaption>
+</figure>
+<figure>
+<img src="img_geschiedenis/fig26_zesdaagse_oorlog.png" style="max-width:480px;">
+<figcaption>FIG 26 — Verloop van de Zesdaagse Oorlog</figcaption>
+</figure>
+
+<h3>Israëlisch-Palestijnse conflicten</h3>
+<ul>
+<li><span class="begrip">Kolonisten</span>: Israëli's die nederzettingen bouwen in bezet gebied.</li>
+<li><b>Eerste Intifada (1987)</b>: aanvankelijk geweldloos verzet (boycots, burgerlijke ongehoorzaamheid) → hardhandig neergeslagen.</li>
+<li><b>Oslo-Vredesakkoorden (1993)</b>: belofte van Israëlische terugtrekking + Palestijnse staat → mislukt door nederzettingen + aanslagen van <b>Hamas</b>.</li>
+<li><b>Tweede Intifada (2000)</b>: terreuraanslagen Hamas, extreem gewelddadige Israëlische respons, muren/grenzen.</li>
+<li>Verkiezingen Palestina (2006): <b>Hamas</b> wint van <b>Fatah</b> → breuk: Hamas in Gaza, Fatah op Westelijke Jordaanoever.</li>
+<li><b>7 oktober</b>-aanslag Hamas → grootschalige Israëlische militaire reactie in Gaza (vergelijking met genocide).</li>
+<li>Voorgestelde oplossing: <span class="begrip">tweestatenoplossing</span> (onafhankelijke Joodse + Palestijnse staat).</li>
+</ul>
+<div class="img-row">
+<figure><img src="img_geschiedenis/fig27_eerste_intifada.png"><figcaption>FIG 27 — Prent over de eerste Intifada</figcaption></figure>
+<figure><img src="img_geschiedenis/fig29_verkiezingen_palestina.png"><figcaption>FIG 29 — Verkiezingen in Palestina (2006)</figcaption></figure>
+<figure><img src="img_geschiedenis/fig28_aanslag_7_oktober.png"><figcaption>FIG 28 — Beelden van de aanslag op 7 oktober en de gevolgen</figcaption></figure>
+</div>
+
+<details>
+<summary>🎤 Mondeling oefenen: vertel het conflict van 1917 tot vandaag</summary>
+<p>Zionisme → Balfour → migratie na Holocaust → VN-verdeelplan → Nakba → staat Israël → oorlogen met buurlanden → bezette gebieden → Intifada's → Oslo (mislukt) → Hamas vs Fatah → 7 oktober → tweestatenoplossing als voorstel.</p>
+</details>
+</section>
+
+<section id="tijdlijn">
+<h2>🕐 Volledige Tijdlijn (chronologisch)</h2>
+<ul class="timeline">
+<li><b>1917</b> — Balfour-declaratie</li>
+<li><b>1935</b> — Neurenberg wetten</li>
+<li><b>1938</b> (9–10 nov) — Kristalnacht</li>
+<li><b>1942</b> (20 jan) — Wannseeconferentie</li>
+<li><b>1945</b> — Bevrijding kampen / Potsdam &amp; Jalta / einde WOII</li>
+<li><b>1945–1946</b> — Neurenbergse processen</li>
+<li><b>1946</b> — Churchill: IJzeren Gordijn</li>
+<li><b>1947</b> — Trumandoctrine / Marshallplan / VN-verdeelplan Palestina</li>
+<li><b>1948</b> — Berlijnse blokkade begint / staat Israël uitgeroepen (14 mei) / Nakba</li>
+<li><b>1949</b> — NAVO opgericht / BRD &amp; DDR ontstaan / Sovjet atoombom / COMECON / China communistisch</li>
+<li><b>1950–1953</b> — Koreaoorlog</li>
+<li><b>1953</b> — Stalin sterft, Chroestsjov komt aan de macht</li>
+<li><b>1955</b> — Warschaupact / Bandungconferentie</li>
+<li><b>1956</b> — Hongaarse opstand / Suezcrisis</li>
+<li><b>1957</b> — Vietnamoorlog begint / Sputnik</li>
+<li><b>1960</b> — Eichmann gevangen</li>
+<li><b>1961</b> — Gagarin in de ruimte / Varkensbaai-invasie / bouw Berlijnse muur</li>
+<li><b>1962</b> — Cubacrisis</li>
+<li><b>1964</b> — Golf van Tonkin-incident, VS grijpt militair in in Vietnam</li>
+<li><b>1967</b> (juni) — Zesdaagse Oorlog</li>
+<li><b>1968</b> — Praagse Lente / Non-proliferatieverdrag / Tet-offensief</li>
+<li><b>1969</b> — Armstrong op de maan</li>
+<li><b>1972</b> — SALT I</li>
+<li><b>1973</b> — Yom Kippur-oorlog</li>
+<li><b>1975</b> — Einde Vietnamoorlog</li>
+<li><b>1979</b> — Camp David-akkoorden / NAVO dubbelbesluit / Sovjetinvasie Afghanistan</li>
+<li><b>1985</b> — Gorbatsjov aan de macht (glasnost &amp; perestrojka)</li>
+<li><b>1987</b> — Eerste Intifada</li>
+<li><b>1989</b> (9 nov) — Val van de Berlijnse Muur</li>
+<li><b>1990</b> — Duitse hereniging</li>
+<li><b>1991</b> — Sovjet-Unie ontbonden</li>
+<li><b>1993</b> — Oslo-Vredesakkoorden</li>
+<li><b>1995</b> — Negationismewet (België)</li>
+<li><b>2000</b> — Tweede Intifada</li>
+<li><b>2006</b> — Verkiezingen Palestina (Hamas wint)</li>
+<li><b>7 oktober</b> — Hamas-aanslag → Israëlische respons in Gaza</li>
+</ul>
+</section>
+
+<section id="begrippen">
+<h2>📖 Volledige Begrippenlijst</h2>
+<table>
+<tr><th>Begrip</th><th>Betekenis</th></tr>
+<tr><td>Genocide</td><td>Stelselmatige uitroeiing van een etnische groep</td></tr>
+<tr><td>Antisemitisme</td><td>Jodenhaat</td></tr>
+<tr><td>Pogrom</td><td>Aanval van een menigte op een bevolkingsgroep met toestemming van de staat</td></tr>
+<tr><td>Getto</td><td>Afgesloten wijk waar Joden verplicht moesten wonen</td></tr>
+<tr><td>Concentratiekamp</td><td>Kamp waar mensen onder dwang bijeengebracht worden</td></tr>
+<tr><td>Vernietigingskamp</td><td>Kamp specifiek bedoeld om mensen te vermoorden</td></tr>
+<tr><td>Negationisme</td><td>Ontkennen van (bv. Holocaust-)misdaden</td></tr>
+<tr><td>Bipolaire wereld</td><td>Wereld geregeerd door twee grote machtsblokken</td></tr>
+<tr><td>Satellietstaat</td><td>Officieel onafhankelijk, in realiteit onder controle van een ander land</td></tr>
+<tr><td>IJzeren Gordijn</td><td>Grens tussen West- en Oostblok</td></tr>
+<tr><td>Containmentpolitiek</td><td>VS-politiek om verspreiding communisme te stoppen</td></tr>
+<tr><td>Dominotheorie</td><td>Idee dat één communistisch land de hele regio "omvalt"</td></tr>
+<tr><td>Guerrillaoorlog</td><td>Snelle aanvallen + terugtrekken, vaak in de jungle</td></tr>
+<tr><td>Derde Wereld</td><td>Landen niet aangesloten bij het Oost- of Westblok</td></tr>
+<tr><td>Vreedzame co-existentie</td><td>Vredevol naast elkaar leven, invloedssfeer respecteren</td></tr>
+<tr><td>Brain drain</td><td>Massaal verlies van hooggeschoolden door migratie</td></tr>
+<tr><td>MAD-doctrine</td><td>Kernoorlog leidt tot vernietiging van beide kanten → voorkomt oorlog</td></tr>
+<tr><td>Détente</td><td>Periode van ontspanning tussen Oost en West</td></tr>
+<tr><td>Brezjnev-doctrine</td><td>USSR mag ingrijpen bij te veel vrijheid in een satellietstaat</td></tr>
+<tr><td>Space race</td><td>Ruimtewedloop tussen VS en USSR</td></tr>
+<tr><td>Glasnost</td><td>Openheid, minder censuur (Gorbatsjov)</td></tr>
+<tr><td>Perestrojka</td><td>Politieke/economische hervorming (Gorbatsjov)</td></tr>
+<tr><td>Zionisme</td><td>Beweging voor een eigen Joodse staat</td></tr>
+<tr><td>Joodse Diaspora</td><td>Verspreiding van de Joden over de wereld</td></tr>
+<tr><td>Balfour-declaratie</td><td>Britse belofte van een plek in Palestina aan zionisten</td></tr>
+<tr><td>Nakba</td><td>"Catastrofe" — vlucht/verdrijving van 750.000 Palestijnen (1948)</td></tr>
+<tr><td>Kolonist</td><td>Israëli die zich vestigt in bezet gebied</td></tr>
+<tr><td>Intifada</td><td>Palestijns verzet tegen Israël</td></tr>
+<tr><td>Tweestatenoplossing</td><td>Onafhankelijke Joodse + Palestijnse staat naast elkaar</td></tr>
+</table>
+</section>
+
+<section id="quiz">
+<h2>❓ Zelftest — Multiplechoice</h2>
+<p style="color:var(--muted); font-size:0.9em;">Klik een antwoord. Daarna verschijnt feedback. Onthoud: dit is om snel zwakke plekken te vinden — leg het antwoord er ook altijd hardop bij uit voor het mondelinge effect!</p>
+<div id="quiz-container"></div>
+</section>
+
+<section id="checklist">
+<h2>✅ Snelle checklist voor morgen</h2>
+<div class="checklist">
+<label><input type="checkbox"> 8 fases genocide kunnen opnoemen + toepassen op de Holocaust</label>
+<label><input type="checkbox"> Holocaust: oorzaak → uitvoering → nasleep kunnen vertellen</label>
+<label><input type="checkbox"> Koude Oorlog: ontstaan (Truman/NAVO/Marshall) kunnen uitleggen</label>
+<label><input type="checkbox"> Berlijnse muur + Cubacrisis kunnen vertellen (incl. MAD)</label>
+<label><input type="checkbox"> Korea- en Vietnamoorlog kunnen vergelijken (containment/domino)</label>
+<label><input type="checkbox"> Détente → confrontatie → einde Koude Oorlog als verhaal navertellen</label>
+<label><input type="checkbox"> Israël-Palestina: ontstaan staat → oorlogen → Oslo → vandaag</label>
+<label><input type="checkbox"> Alle begrippen kunnen uitleggen in eigen woorden</label>
+<label><input type="checkbox"> Kaartoefeningen: IJzeren Gordijn, Cuba/Duitsland, China/Korea/Vietnam, Israël/Palestina</label>
+</div>
+</section>
+
+</main>
+
+<div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+<div class="score-box" id="score-box">Score: 0 / 0</div>
+
+<script>
+const quizData = [
+  {q:"Wat is de JUISTE volgorde van de eerste 3 fases van een genocide volgens Stanton?", opts:["Classificatie → Symbolisering → Dehumanisering","Symbolisering → Classificatie → Organisering","Dehumanisering → Classificatie → Polarisatie","Organisering → Symbolisering → Classificatie"], correct:0},
+  {q:"Wat hield de Wannseeconferentie (20 januari 1942) in?", opts:["De ondertekening van de wapenstilstand met Japan","Het besluit om de Joden industrieel te vernietigen in vernietigingskampen","De oprichting van de NAVO","Het begin van de Kristalnacht"], correct:1},
+  {q:"Wie was de architect van de Holocaust die naar Argentinië vluchtte en in 1960 door de Mossad gevangen werd?", opts:["Jozef Mengele","Joseph Goebbels","Adolf Eichmann","Heinrich Himmler"], correct:2},
+  {q:"Wat is het verschil tussen 'classificatie' en 'dehumanisering' in het genocideproces?", opts:["Er is geen verschil, het zijn synoniemen","Classificatie is enkel het indelen in groepen; dehumanisering ontkent de menselijkheid van de andere groep","Dehumanisering komt altijd vóór classificatie","Classificatie gebeurt enkel door de staat, dehumanisering enkel door burgers"], correct:1},
+  {q:"Waarom werd in 1995 de negationismewet ingevoerd in België?", opts:["Om Holocaust-ontkenning, goedkeuring of minimalisering strafbaar te maken","Om de bouw van nieuwe concentratiekampen te verbieden","Om Duitse herstelbetalingen te regelen","Om de Neurenbergprocessen te heropenen"], correct:0},
+  {q:"Wat verklaart het IJzeren Gordijn volgens Churchill (1946)?", opts:["Een fysieke muur tussen Oost- en West-Berlijn","De grens tussen het kapitalistische Westen en het communistische Oosten","Een handelsverdrag tussen de VS en de USSR","De grens tussen Noord- en Zuid-Korea"], correct:1},
+  {q:"Wat was het DOEL van de Trumandoctrine (1947)?", opts:["Europa economisch herstellen na de oorlog","Landen steunen die zich bedreigd voelen door communisme, om verspreiding te stoppen","Een vredesakkoord sluiten met de Sovjet-Unie","De Verenigde Naties oprichten"], correct:1},
+  {q:"Waarom werd het Warschaupact in 1955 opgericht?", opts:["Als reactie op de toetreding van West-Duitsland tot de NAVO","Als reactie op de Cubacrisis","Om het Marshallplan te financieren","Om de Praagse Lente neer te slaan"], correct:0},
+  {q:"Wat was het gevolg van de Sovjet atoombom in 1949?", opts:["Het einde van de Koude Oorlog","Het Amerikaanse militaire overwicht verdween en er ontstond een wapenwedloop","De NAVO werd ontbonden","Cuba werd communistisch"], correct:1},
+  {q:"Waarom weigerden Oost-Europese landen het Marshallplan?", opts:["Ze hadden geen oorlogsschade","Onder druk van de Sovjet-Unie","Omdat het te weinig geld was","Omdat de VS het hen verbood"], correct:1},
+  {q:"Wat betekent 'vreedzame co-existentie' zoals Chroestsjov het toepaste?", opts:["Volledige eenwording van Oost en West","Vredevol naast elkaar leven en elkaars invloedssfeer respecteren","Een militaire alliantie tussen VS en USSR","Het afschaffen van alle kernwapens"], correct:1},
+  {q:"Waarom werd de Berlijnse muur in 1961 gebouwd?", opts:["Om een NAVO-aanval te voorkomen","Om de brain drain (vlucht van hooggeschoolden) naar het Westen te stoppen","Om de Cubacrisis op te lossen","Om Duitsland te herenigen"], correct:1},
+  {q:"Wat deed de MAD-doctrine tijdens de Cubacrisis?", opts:["Ze zorgde ervoor dat de VS Cuba binnenviel","Ze maakte een kernoorlog in de praktijk onmogelijk omdat beide kanten vernietigd zouden worden","Ze leidde tot de bouw van de Berlijnse muur","Ze was een wapenverdrag tussen Frankrijk en China"], correct:1},
+  {q:"Wat was de 'dominotheorie' die de VS gebruikte om in Vietnam in te grijpen?", opts:["Het idee dat als Vietnam communistisch werd, heel Azië zou volgen","Het idee dat Vietnam een dominostuk was in een spel tussen Frankrijk en Japan","Een economische theorie over handelstekorten","Een militaire strategie van de Vietcong"], correct:0},
+  {q:"Wat was het keerpunt in de Vietnamoorlog dat het Amerikaanse publiek tegen de oorlog deed keren?", opts:["De Varkensbaai-invasie","Het Tet-offensief (1968)","De Cubacrisis","De Praagse Lente"], correct:1},
+  {q:"Waarom zagen de Vietnamezen de oorlog anders dan de Amerikanen?", opts:["Ze zagen het als een onafhankelijkheidsoorlog, niet enkel als een Koude Oorlog-conflict","Ze waren onverschillig over het resultaat","Ze vochten enkel voor economische redenen","Ze beschouwden het als een religieuze oorlog"], correct:0},
+  {q:"Wat hield de Brezjnev-doctrine in?", opts:["De Sovjet-Unie mag ingrijpen als een satellietstaat te ver van het communisme afdrijft","De VS mag overal op de wereld ingrijpen tegen communisme","Kernwapens worden verboden in Europa","Satellietstaten krijgen volledige onafhankelijkheid"], correct:0},
+  {q:"Wat betekenden glasnost en perestrojka onder Gorbatsjov?", opts:["Glasnost = meer kernwapens, perestrojka = minder kernwapens","Glasnost = openheid/minder censuur, perestrojka = politieke en economische hervorming","Beide betekenen hetzelfde: bezuinigingen","Glasnost = oorlog, perestrojka = vrede"], correct:1},
+  {q:"Wat gebeurde er op 9 november 1989?", opts:["De Cubacrisis begon","De Sovjet-Unie viel uiteen","De Val van de Berlijnse Muur","De Praagse Lente brak uit"], correct:2},
+  {q:"Wat was de Nakba voor de Palestijnen?", opts:["De stichting van de staat Israël als positieve gebeurtenis","De 'catastrofe': vlucht/verdrijving van 750.000 Palestijnen in 1948","Een vredesverdrag met Egypte","De bouw van de Israëlische muur"], correct:1},
+  {q:"Wat beloofde de Balfour-declaratie (1917)?", opts:["Onafhankelijkheid voor Egypte","Een Britse mandaat over heel het Midden-Oosten","Dat zionisten een plek kregen in Palestina","Het einde van de Ottomaanse overheersing"], correct:2},
+  {q:"Wat was het gevolg van de Zesdaagse Oorlog (1967) voor Israël?", opts:["Israël verloor de Sinaïwoestijn","Israël veroverde Jeruzalem, de Westelijke Jordaanoever, Gaza en de Golanhoogten","Israël trok zich volledig terug uit Palestina","Egypte nationaliseerde het Suezkanaal"], correct:1},
+  {q:"Waarom mislukten de Oslo-Vredesakkoorden (1993)?", opts:["Omdat de VN ze nooit goedkeurde","Door voortgaande nederzettingenbouw en aanslagen van Hamas","Omdat Israël zich volledig terugtrok","Omdat Egypte de akkoorden weigerde te tekenen"], correct:1},
+  {q:"Wat is de 'tweestatenoplossing'?", opts:["Eén staat met twee regeringen","Een onafhankelijke Joodse staat en een onafhankelijke Palestijnse staat naast elkaar","Het herverdelen van Jeruzalem onder drie religies","Een federatie tussen Israël en Egypte"], correct:1},
+  {q:"Wat is het verschil tussen de Eerste en Tweede Intifada?", opts:["De Eerste was vooral geweldloos (boycots/burgerlijke ongehoorzaamheid), de Tweede veel gewelddadiger met terreuraanslagen","Ze zijn identiek, enkel het jaartal verschilt","De Eerste was in Gaza, de Tweede enkel in Jeruzalem","De Tweede Intifada werd door Israël georganiseerd"], correct:0}
+];
+
+let score = 0, answered = 0;
+const container = document.getElementById('quiz-container');
+
+quizData.forEach((item, idx) => {
+  const div = document.createElement('div');
+  div.className = 'quiz-q';
+  const p = document.createElement('p');
+  p.className = 'question';
+  p.textContent = (idx+1) + ". " + item.q;
+  div.appendChild(p);
+  const optsDiv = document.createElement('div');
+  optsDiv.className = 'quiz-opts';
+  item.opts.forEach((opt, oi) => {
+    const btn = document.createElement('button');
+    btn.textContent = opt;
+    btn.onclick = () => {
+      if (btn.dataset.locked) return;
+      const allBtns = optsDiv.querySelectorAll('button');
+      allBtns.forEach(b => b.dataset.locked = "1");
+      if (oi === item.correct) {
+        btn.classList.add('correct');
+        score++;
+      } else {
+        btn.classList.add('wrong');
+        allBtns[item.correct].classList.add('correct');
+      }
+      answered++;
+      document.getElementById('score-box').textContent = `Score: ${score} / ${answered}`;
+      document.getElementById('progress-fill').style.width = (answered / quizData.length * 100) + '%';
+    };
+    optsDiv.appendChild(btn);
+  });
+  div.appendChild(optsDiv);
+  container.appendChild(div);
+});
+</script>
+
+</body>
+</html>
